@@ -843,7 +843,7 @@ input:focus, textarea:focus, select:focus
    flex-basis: 0%;
    align-self: auto;
    box-sizing: border-box;
-   margin: 25px 25px 25px 25px;
+   margin: 20px 20px 20px 20px;
    background-color: transparent;
    background-image: none;
    border: 0px solid transparent;
@@ -911,7 +911,7 @@ input:focus, textarea:focus, select:focus
    flex-basis: 0%;
    align-self: auto;
    box-sizing: border-box;
-   margin: 25px 25px 25px 25px;
+   margin: 20px 20px 20px 20px;
    background-color: transparent;
    background-image: none;
    border: 0px solid transparent;
@@ -979,7 +979,7 @@ input:focus, textarea:focus, select:focus
    flex-basis: 0%;
    align-self: auto;
    box-sizing: border-box;
-   margin: 25px 25px 25px 25px;
+   margin: 20px 20px 20px 20px;
    background-color: transparent;
    background-image: none;
    border: 0px solid transparent;
@@ -1072,7 +1072,7 @@ input:focus, textarea:focus, select:focus
 #assets
 {
    box-sizing: border-box;
-   padding: 60px 15px 5px 15px;
+   padding: 60px 15px 0 15px;
    margin-right: auto;
    margin-left: auto;
    max-width: 1140px;
@@ -1142,7 +1142,7 @@ input:focus, textarea:focus, select:focus
 #LayoutGrid5
 {
    box-sizing: border-box;
-   padding: 5px 10px 25px 10px;
+   padding: 0 10px 25px 10px;
    margin-right: auto;
    margin-left: auto;
    max-width: 1140px;
@@ -1205,14 +1205,14 @@ input:focus, textarea:focus, select:focus
    width: 100%;
    background-color: #121011;
    background-image: none;
-   border: 0px solid #2C3E50;
+   border: 0px solid #CCCCCC;
    box-sizing: border-box;
    margin: 0;
 }
 #contact
 {
    box-sizing: border-box;
-   padding: 50px 15px 20px 15px;
+   padding: 60px 15px 5px 15px;
    margin-right: auto;
    margin-left: auto;
    max-width: 1140px;
@@ -1257,34 +1257,83 @@ input:focus, textarea:focus, select:focus
 {
    clear: both;
 }
-@media (max-width: 480px)
+@media (max-width: 576px)
 {
 #contact > .row > .col-1
 {
    float: none;
+   width: 100% !important;
+}
+}
+#wb_social
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
    width: 100%;
+   background-color: #121011;
+   background-image: none;
+   border: 0px solid #2C3E50;
+   box-sizing: border-box;
+   margin: 0;
 }
+#social
+{
+   box-sizing: border-box;
+   padding: 50px 15px 40px 15px;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 1140px;
 }
-#wb_Text7 
+#social > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#social > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#social > .row > .col-1
+{
+   float: left;
+}
+#social > .row > .col-1
 {
    background-color: transparent;
    background-image: none;
-   border: 0px solid #000000;
+   border: 0px solid #FFFFFF;
    border-radius: 0px;
-   padding: 20px 0 20px 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_Text7 div
-{
-   text-align: center;
-}
-#wb_Text7
-{
-   display: block;
-   margin: 0;
-   box-sizing: border-box;
    width: 100%;
+   text-align: center;
+}
+#social:before,
+#social:after,
+#social .row:before,
+#social .row:after
+{
+   display: table;
+   content: " ";
+}
+#social:after,
+#social .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#social > .row > .col-1
+{
+   float: none;
+   width: 100%;
+}
 }
 #wb_IconFont3
 {
@@ -1293,9 +1342,9 @@ input:focus, textarea:focus, select:focus
    border: 2px solid #FFFFFF;
    border-radius: 50%;
    text-align: center;
-   margin: 0 10px 0 0 ;
+   margin: 0 10px 0 10px;
    padding: 10px 10px 10px 10px;
-   line-height: 36px;
+   line-height: 46px;
    vertical-align: top;
    display:inline-block;
    position:relative;
@@ -1317,9 +1366,9 @@ input:focus, textarea:focus, select:focus
 {
    fill: #FFFFFF;
    display: inline-block;
-   font-size: 36px;
+   font-size: 46px;
    vertical-align: middle;
-   width: 35px;
+   width: 45px;
 }
 #IconFont3:hover
 {
@@ -1346,9 +1395,9 @@ input:focus, textarea:focus, select:focus
    border: 2px solid #FFFFFF;
    border-radius: 50%;
    text-align: center;
-   margin: 0 10px 0 0 ;
+   margin: 0 10px 0 10px;
    padding: 10px 10px 10px 10px;
-   line-height: 36px;
+   line-height: 46px;
    vertical-align: top;
    display:inline-block;
    position:relative;
@@ -1370,9 +1419,9 @@ input:focus, textarea:focus, select:focus
 {
    fill: #FFFFFF;
    display: inline-block;
-   font-size: 36px;
+   font-size: 46px;
    vertical-align: middle;
-   width: 35px;
+   width: 45px;
 }
 #IconFont4:hover
 {
@@ -1399,9 +1448,9 @@ input:focus, textarea:focus, select:focus
    border: 2px solid #FFFFFF;
    border-radius: 50%;
    text-align: center;
-   margin: 0 10px 0 0 ;
+   margin: 0 10px 0 10px;
    padding: 10px 10px 10px 10px;
-   line-height: 36px;
+   line-height: 46px;
    vertical-align: top;
    display:inline-block;
    position:relative;
@@ -1423,9 +1472,9 @@ input:focus, textarea:focus, select:focus
 {
    fill: #FFFFFF;
    display: inline-block;
-   font-size: 36px;
+   font-size: 46px;
    vertical-align: middle;
-   width: 35px;
+   width: 45px;
 }
 #IconFont5:hover
 {
@@ -1452,9 +1501,9 @@ input:focus, textarea:focus, select:focus
    border: 2px solid #FFFFFF;
    border-radius: 50%;
    text-align: center;
-   margin: 0;
+   margin: 0 10px 0 10px;
    padding: 10px 10px 10px 10px;
-   line-height: 36px;
+   line-height: 46px;
    vertical-align: top;
    display:inline-block;
    position:relative;
@@ -1476,9 +1525,9 @@ input:focus, textarea:focus, select:focus
 {
    fill: #FFFFFF;
    display: inline-block;
-   font-size: 36px;
+   font-size: 46px;
    vertical-align: middle;
-   width: 35px;
+   width: 45px;
 }
 #IconFont6:hover
 {
@@ -2052,7 +2101,7 @@ input:focus, textarea:focus, select:focus
 {
    display: flex;
    position: relative;
-   padding: 65px 10px 50px 10px;
+   padding: 50px 10px 50px 10px;
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: center;
@@ -2078,8 +2127,8 @@ input:focus, textarea:focus, select:focus
    flex-basis: 33.33%;
    align-self: auto;
    box-sizing: border-box;
-   margin: 15px 15px 15px 15px;
-   max-width: calc(33.33% - 30px);
+   margin: 20px 20px 20px 20px;
+   max-width: calc(33.33% - 40px);
    background-color: transparent;
    background-image: none;
    border: 0px solid transparent;
@@ -2136,8 +2185,8 @@ input:focus, textarea:focus, select:focus
    flex-basis: 33.33%;
    align-self: auto;
    box-sizing: border-box;
-   margin: 15px 15px 15px 15px;
-   max-width: calc(33.33% - 30px);
+   margin: 20px 20px 20px 20px;
+   max-width: calc(33.33% - 40px);
    background-color: transparent;
    background-image: none;
    border: 0px solid transparent;
@@ -2194,8 +2243,8 @@ input:focus, textarea:focus, select:focus
    flex-basis: 33.33%;
    align-self: auto;
    box-sizing: border-box;
-   margin: 15px 15px 15px 15px;
-   max-width: calc(33.33% - 30px);
+   margin: 20px 20px 20px 20px;
+   max-width: calc(33.33% - 40px);
    background-color: transparent;
    background-image: none;
    border: 0px solid transparent;
@@ -2252,8 +2301,8 @@ input:focus, textarea:focus, select:focus
    flex-basis: 33.33%;
    align-self: auto;
    box-sizing: border-box;
-   margin: 15px 15px 15px 15px;
-   max-width: calc(33.33% - 30px);
+   margin: 20px 20px 20px 20px;
+   max-width: calc(33.33% - 40px);
    background-color: transparent;
    background-image: none;
    border: 0px solid transparent;
@@ -2310,8 +2359,8 @@ input:focus, textarea:focus, select:focus
    flex-basis: 33.33%;
    align-self: auto;
    box-sizing: border-box;
-   margin: 15px 15px 15px 15px;
-   max-width: calc(33.33% - 30px);
+   margin: 20px 20px 20px 20px;
+   max-width: calc(33.33% - 40px);
    background-color: transparent;
    background-image: none;
    border: 0px solid transparent;
@@ -2368,8 +2417,8 @@ input:focus, textarea:focus, select:focus
    flex-basis: 33.33%;
    align-self: auto;
    box-sizing: border-box;
-   margin: 15px 15px 15px 15px;
-   max-width: calc(33.33% - 30px);
+   margin: 20px 20px 20px 20px;
+   max-width: calc(33.33% - 40px);
    background-color: transparent;
    background-image: none;
    border: 0px solid transparent;
@@ -2525,6 +2574,94 @@ input:focus, textarea:focus, select:focus
    text-align: center;
 }
 #Shape4
+{
+   width: 200px;
+   height: 2px;
+   background-color: #F5F5F5;
+   background-image: none;
+   border: 0px #F5F5F5 solid;
+}
+#wb_IconFont1
+{
+   background-color: #2C3E50;
+   background-image: none;
+   border: 2px solid #FFFFFF;
+   border-radius: 50%;
+   text-align: center;
+   margin: 0 10px 0 10px;
+   padding: 10px 10px 10px 10px;
+   line-height: 46px;
+   vertical-align: top;
+   display:inline-block;
+   position:relative;
+}
+#wb_IconFont1:hover
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 2px solid #FFFFFF;
+}
+#IconFont1
+{
+   overflow: visible;
+   vertical-align: top;
+   width: 100%;
+   height: 100%;
+}
+#IconFont1
+{
+   fill: #FFFFFF;
+   display: inline-block;
+   font-size: 46px;
+   vertical-align: middle;
+   width: 45px;
+}
+#IconFont1:hover
+{
+   fill: #18BC9C;
+}
+#wb_IconFont1
+{
+   -webkit-transform: rotate(0deg) ;
+   transform: rotate(0deg) ;
+   -webkit-transition: -webkit-transform 500ms linear 0ms;
+   transition: transform 500ms linear 0ms;
+}
+#wb_IconFont1:hover
+{
+   -webkit-transform: rotate(360deg) ;
+   transform: rotate(360deg) ;
+   -webkit-transition: -webkit-transform 500ms linear 0ms;
+   transition: transform 500ms linear 0ms;
+}
+#wb_contxt
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   vertical-align: top;
+   margin: 0;
+   padding: 0 0 10px 0;
+   text-align: center;
+}
+#contxt
+{
+   color: #F5F5F5;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 24px;
+   margin: 0;
+   text-align: center;
+}
+#contxt a
+{
+   color: inherit;
+   text-decoration: none;
+}
+#Shape6
 {
    width: 200px;
    height: 2px;
