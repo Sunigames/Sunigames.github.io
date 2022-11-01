@@ -1,7 +1,323 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+<head>
+<meta charset="utf-8">
+<title>Hoglet Interactive</title>
+<meta name="author" content="Hoglet Interactive - Alexander Toth">
+<meta name="robots" content="index, follow">
+<meta name="revisit-after" content="31 days">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="icon_64.ico" rel="shortcut icon" type="image/x-icon">
+<link href="icon_64.png" rel="icon" sizes="64x64" type="image/png">
+<link href="icon_64.png" rel="icon" sizes="64x64" type="image/png">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/Hoglet_Interactive.css" rel="stylesheet">
+<link href="css/wb17_author.css" rel="stylesheet">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery.ui.effect.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/util.min.js"></script>
+<script src="js/collapse.min.js"></script>
+<script src="js/dropdown.min.js"></script>
+<script src="js/wwb17.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#games']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_games').offset().top-128 }, 600, 'easeOutSine');
+   });
+   $("a[href*='#storesCards']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#storesCards').offset().top }, 600, 'easeOutExpo');
+   });
+   $('#headerMenu .dropdown-toggle').dropdown({popperConfig:{placement:'bottom-start',modifiers:{computeStyle:{gpuAcceleration:false}}}});
+   $(document).on('click','.headerMenu-navbar-collapse.show',function(e)
+   {
+      if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) 
+      {
+         $(this).collapse('hide');
+      }
+   });
+   $("a[href*='#assets']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_assets').offset().top-90 }, 600, 'easeOutSine');
+   });
+   $("a[href*='#contact']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_contact').offset().top }, 600, 'easeOutSine');
+   });
+   $("a[href*='#LayoutGrid1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid1').offset().top }, 600, 'easeOutSine');
+   });
+   $("a[href*='#CardContainer1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#CardContainer1').offset().top }, 600, 'easeOutExpo');
+   });
+   var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+   if (iOS)
+   {
+      $('#wb_games').css('background-attachment', 'scroll');
+   }
+   $(window).on('resize', function()
+   {
+      ResponsiveVideo('games-video');
+   });
+   ResponsiveVideo('games-video');
+});
+</script>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<div id="wb_header">
+<div id="header">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image1" style="display:inline-block;width:100%;height:auto;z-index:0;">
+<a href="#games"><img src="images/Hoglet_Logo_921x206.png" id="Image1" alt="" width="374" height="84"></a>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_headerMenu" style="display:inline-block;width:100%;z-index:1;">
+<div id="headerMenu" class="headerMenu" style="width:100%;height:auto !important;">
+<div class="container">
+<div class="navbar-header">
+<button title="Hamburger Menu" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".headerMenu-navbar-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="headerMenu-navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="nav-item">
+<a href="#games" class="nav-link">Games</a>
+</li>
+<li class="nav-item">
+<a href="#assets" class="nav-link">Assets</a>
+</li>
+<li class="nav-item">
+<a href="#contact" class="nav-link">Contact</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_games">
+<div id="games-video"><video src="web_video.mp4" autoplay loop muted playsinline></video>
+</div>
+<div id="games-overlay"></div>
+<div id="games">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Heading1" style="display:inline-block;width:100%;z-index:5;">
+<h1 id="Heading1">GAMES</h1>
+</div>
+<div id="wb_Shape4" style="display:inline-block;width:380px;height:1px;z-index:6;position:relative;">
+<div id="Shape4"></div>
+</div>
+<div id="wb_storesCards">
+<div id="storesCards">
+<div id="wb_storesCard1" style="display:flex;text-align:center;z-index:2;" class="card">
+   <div id="storesCard1-card-body">
+      <a href="https://store.steampowered.com/app/2091700/RollCats/" target="_blank" title="RollCats" class="stretched-link"><img id="storesCard1-card-item0" src="images/RollCats_pic.jpg" width="500" height="330" alt="" title="RollCats"></a>
+      <div id="storesCard1-card-item1">RollCats</div>
+      <div id="storesCard1-card-item2">Intergalactic Motocat Championship <br>- play free demo on Steam and add RollCats to your wishlist.</div>
+   </div>
+</div>
+<div id="wb_storesCard2" style="display:flex;text-align:center;z-index:3;" class="card">
+   <div id="storesCard2-card-body">
+      <a href="https://hoglet.itch.io/river-strike" target="_blank" class="stretched-link"><img id="storesCard2-card-item0" src="images/RiverStrike_pic.jpg" width="500" height="330" alt="River Strike" title=""></a>
+      <div id="storesCard2-card-item1">River Strike</div>
+      <div id="storesCard2-card-item2">Tribute to great classic "River Raid" <br>- play it on PC or Android phone.</div>
+   </div>
+</div>
+<div id="wb_storesCard3" style="display:flex;text-align:center;z-index:4;" class="card">
+   <div id="storesCard3-card-body">
+      <a href="https://play.google.com/store/apps/details?id=com.SuniGames.BB8XmasRun" target="_blank" class="stretched-link"><img id="storesCard3-card-item0" src="images/BB8_pic.jpg" width="500" height="330" alt="" title=""></a>
+      <div id="storesCard3-card-item1">BB8 Xmas roll</div>
+      <div id="storesCard3-card-item2">Help BB-8 to collect Christmas presents in this fan to fan game.</div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_assets">
+<div id="assets">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading7" style="display:inline-block;width:100%;z-index:11;">
+<h1 id="Heading7"><a href="https://assetstore.unity.com/publishers/32382" target="_blank">UNITY ASSETS</a></h1>
+</div>
+<div id="wb_Shape3" style="display:inline-block;width:380px;height:1px;z-index:12;position:relative;">
+<div id="Shape3"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid5">
+<div id="LayoutGrid5">
+<div class="row">
+<div class="col-1">
+<div id="wb_CardContainer1">
+<div id="CardContainer1">
+<div id="wb_Card1" style="display:flex;text-align:center;z-index:13;" class="card">
+   <div id="Card1-card-body">
+      <a href="https://assetstore.unity.com/packages/templates/systems/antigravity-hover-race-ship-with-mobile-controls-103117" target="_blank" class="stretched-link"><img id="Card1-card-item0" src="images/antigravity_hover.jpg" width="500" height="330" alt="" title=""></a>
+      <div id="Card1-card-item1">Antigravity Hover Race Ship with Mobile Controls</div>
+   </div>
+</div>
+<div id="wb_Card2" style="display:flex;text-align:center;z-index:14;" class="card">
+   <div id="Card2-card-body">
+      <a href="https://assetstore.unity.com/packages/templates/packs/chr-complete-hover-racer-156337" target="_blank" class="stretched-link"><img id="Card2-card-item0" src="images/chr.jpg" width="500" height="330" alt="" title=""></a>
+      <div id="Card2-card-item1">CHR <br>Complete Hover Racer</div>
+   </div>
+</div>
+<div id="wb_Card6" style="display:flex;text-align:center;z-index:15;" class="card">
+   <div id="Card6-card-body">
+      <a href="https://assetstore.unity.com/packages/tools/input-management/gyrodrive-169821" target="_blank" class="stretched-link"><img id="Card6-card-item0" src="images/gyrodrive.jpg" width="500" height="330" alt="" title=""></a>
+      <div id="Card6-card-item1">GyroDrive <br>Gyroscope input plugin</div>
+   </div>
+</div>
+<div id="wb_Card10" style="display:flex;text-align:center;z-index:16;" class="card">
+   <div id="Card10-card-body">
+      <a href="https://assetstore.unity.com/packages/tools/particles-effects/flockbox-ecs-144936" target="_blank" class="stretched-link"><img id="Card10-card-item0" src="images/flockbox.jpg" width="500" height="330" alt="" title=""></a>
+      <div id="Card10-card-item1">FlockBox ECS <br>Quick flocking solution</div>
+   </div>
+</div>
+<div id="wb_Card9" style="display:flex;text-align:center;z-index:17;" class="card">
+   <div id="Card9-card-body">
+      <a href="https://assetstore.unity.com/packages/templates/systems/rolling-snowman-player-controller-mobile-ready-117142" target="_blank" class="stretched-link"><img id="Card9-card-item0" src="images/rolling_snowman.jpg" width="500" height="330" alt="" title=""></a>
+      <div id="Card9-card-item1">Rolling Snowman <br>Player Controller</div>
+   </div>
+</div>
+<div id="wb_Card8" style="display:flex;text-align:center;z-index:18;" class="card">
+   <div id="Card8-card-body">
+      <a href="https://assetstore.unity.com/packages/tools/camera/superfast-lens-dirt-144990" target="_blank" class="stretched-link"><img id="Card8-card-item0" src="images/lensdirt.jpg" width="500" height="330" alt="" title=""></a>
+      <div id="Card8-card-item1">Superfast Lens Dirt</div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_contact">
+<div id="contact">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text7">
+<span style="color:#FFFFFF;font-family:Arial;font-size:29px;"><strong>Follow Hoglet Interactive</strong></span>
+</div>
+<div id="wb_IconFont3" style="display:inline-block;width:36px;height:36px;text-align:center;z-index:21;">
+<a href="https://twitter.com/Suni_games" target="_blank"><svg id="IconFont3" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M962 233 C937 270, 906 302, 870 328 C870 334, 870 342, 870 352 C870 402, 863 451, 848 501 C834 550, 812 597, 782 643 C753 688, 718 728, 677 763 C636 798, 587 826, 530 846 C472 867, 411 878, 345 878 C242 878, 147 850, 62 795 C75 796, 90 797, 106 797 C193 797, 268 771, 335 718 C295 717, 260 705, 228 681 C196 657, 175 627, 163 590 C175 592, 187 593, 198 593 C214 593, 230 591, 246 587 C204 578, 168 557, 140 523 C112 489, 98 450, 98 406 L98 403 C124 418, 152 426, 182 427 C156 410, 136 388, 122 361 C106 334, 99 305, 99 273 C99 239, 108 208, 124 180 C171 237, 227 282, 293 316 C359 350, 430 369, 505 373 C502 358, 500 344, 500 331 C500 280, 518 236, 554 200 C590 164, 634 146, 685 146 C738 146, 783 166, 820 204 C861 196, 900 182, 937 160 C923 204, 896 238, 856 262 C891 258, 927 248, 962 233"/>
+</svg>
+</a>
+</div>
+<div id="wb_IconFont4" style="display:inline-block;width:36px;height:36px;text-align:center;z-index:22;">
+<a href="https://store.steampowered.com/search/?developer=Hoglet%20Interactive" target="_blank"><svg id="IconFont4" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M864 234 C891 261, 904 294, 904 332 C904 371, 891 404, 864 431 C836 458, 804 472, 765 472 C727 472, 694 458, 666 431 C639 404, 626 371, 626 332 C626 294, 639 261, 666 234 C694 207, 727 193, 765 193 C804 193, 836 207, 864 234 Z M423 858 C451 830, 464 796, 464 756 C464 717, 451 683, 423 655 C395 627, 361 614, 322 614 C311 614, 301 615, 291 617 L350 641 C380 653, 400 673, 413 702 C425 731, 425 759, 414 788 C402 818, 381 838, 352 851 C324 863, 295 863, 266 851 C258 848, 246 844, 230 837 C215 831, 203 826, 195 823 C208 846, 225 864, 247 878 C270 892, 295 899, 322 899 C361 899, 395 885, 423 858 Z M939 333 C939 285, 922 244, 888 210 C854 176, 812 159, 764 159 C716 159, 675 176, 641 210 C607 244, 590 285, 590 333 C590 381, 607 422, 641 456 C675 490, 716 507, 764 507 C812 507, 854 490, 888 456 C922 422, 939 381, 939 333 Z M1024 333 C1024 406, 999 466, 948 517 C897 568, 836 593, 764 593 L515 775 C510 824, 489 866, 452 900 C416 934, 372 951, 322 951 C276 951, 234 936, 199 907 C164 878, 141 842, 132 798 L1 745 L1 500 L223 590 C253 571, 286 562, 322 562 C327 562, 333 562, 342 563 L504 331 C505 259, 530 199, 581 148 C632 98, 693 73, 764 73 C836 73, 897 98, 948 150 C999 200, 1024 261, 1024 333"/>
+</svg>
+</a>
+</div>
+<div id="wb_IconFont5" style="display:inline-block;width:36px;height:36px;text-align:center;z-index:23;">
+<a href="https://www.instagram.com/hoglet_interactive/" target="_blank"><svg id="IconFont5" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M616 615 C644 587, 659 552, 659 512 C659 471, 644 437, 616 408 C587 380, 553 366, 512 366 C472 366, 437 380, 409 408 C380 437, 366 471, 366 512 C366 552, 380 587, 409 615 C437 644, 472 658, 512 658 C553 658, 587 644, 616 615 Z M672 352 C716 396, 737 449, 737 512 C737 574, 716 627, 672 671 C628 715, 575 737, 512 737 C450 737, 397 715, 353 671 C309 627, 287 574, 287 512 C287 449, 309 396, 353 352 C397 309, 450 287, 512 287 C575 287, 628 309, 672 352 Z M784 240 C794 251, 799 263, 799 278 C799 292, 794 304, 784 315 C773 325, 761 330, 746 330 C732 330, 720 325, 709 315 C699 304, 694 292, 694 278 C694 263, 699 251, 709 240 C720 230, 732 225, 746 225 C761 225, 773 230, 784 240 Z M556 152 C530 152, 515 152, 512 152 C510 152, 495 152, 469 152 C442 151, 422 151, 408 152 C395 152, 376 152, 353 153 C330 154, 311 156, 294 159 C278 162, 265 165, 253 170 C234 177, 218 188, 203 203 C189 217, 178 234, 170 253 C166 264, 162 278, 159 294 C157 310, 155 330, 154 353 C153 376, 152 394, 152 408 C152 422, 152 442, 152 468 C152 495, 152 509, 152 512 C152 514, 152 529, 152 556 C152 582, 152 602, 152 616 C152 630, 153 648, 154 671 C155 694, 157 714, 159 730 C162 746, 166 760, 170 771 C178 790, 189 806, 203 821 C218 835, 234 846, 253 854 C265 858, 278 862, 294 865 C311 868, 330 869, 353 870 C376 871, 395 872, 408 872 C422 872, 442 872, 469 872 C495 872, 510 872, 512 872 C515 872, 530 872, 556 872 C583 872, 603 872, 616 872 C630 872, 648 871, 671 870 C695 869, 714 868, 730 865 C746 862, 760 858, 771 854 C790 846, 807 835, 821 821 C836 806, 847 790, 855 771 C859 760, 862 746, 865 730 C868 714, 870 694, 871 671 C872 648, 872 630, 873 616 C873 602, 873 582, 873 556 C872 529, 872 514, 872 512 C872 509, 872 495, 873 468 C873 442, 873 422, 873 408 C872 394, 872 376, 871 353 C870 330, 868 310, 865 294 C862 278, 859 264, 855 253 C847 234, 836 217, 821 203 C807 188, 790 177, 771 170 C760 165, 746 162, 730 159 C714 156, 695 154, 671 153 C648 152, 630 152, 616 152 C603 151, 583 151, 556 152 Z M948 331 C950 364, 951 425, 951 512 C951 599, 950 659, 948 693 C945 772, 921 834, 877 877 C834 920, 773 944, 693 948 C660 950, 600 951, 512 951 C425 951, 365 950, 331 948 C252 944, 191 920, 147 877 C104 834, 80 772, 76 693 C74 659, 74 599, 74 512 C74 425, 74 364, 76 331 C80 251, 104 190, 147 147 C191 103, 252 80, 331 76 C365 74, 425 73, 512 73 C600 73, 660 74, 693 76 C773 80, 834 103, 877 147 C921 190, 945 251, 948 331"/>
+</svg>
+</a>
+</div>
+<div id="wb_IconFont6" style="display:inline-block;width:36px;height:36px;text-align:center;z-index:24;">
+<a href="https://www.youtube.com/c/AlexanderTS%C3%BCnigames" target="_blank"><svg id="IconFont6" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M628 711 L628 831 C628 857, 621 870, 606 870 C597 870, 589 865, 580 857 L580 685 C589 677, 597 672, 606 672 C621 672, 628 685, 628 711 Z M821 711 L821 738 L770 738 L770 711 C770 685, 779 672, 796 672 C813 672, 821 685, 821 711 Z M269 587 L331 587 L331 534 L152 534 L152 587 L212 587 L212 912 L269 912Z  M434 912 L485 912 L485 630 L434 630 L434 846 C423 862, 412 870, 401 870 C395 870, 391 866, 389 858 C389 856, 389 850, 389 838 L389 630 L338 630 L338 853 C338 872, 340 885, 343 895 C347 909, 358 916, 376 916 C394 916, 413 904, 434 881 Z M679 827 L679 715 C679 687, 677 668, 674 658 C668 637, 654 626, 633 626 C614 626, 597 636, 580 657 L580 534 L529 534 L529 912 L580 912 L580 884 C597 905, 615 916, 633 916 C654 916, 668 905, 674 884 C677 874, 679 855, 679 827 Z M872 822 L872 814 L820 814 C820 834, 820 845, 819 849 C817 863, 809 870, 796 870 C779 870, 770 856, 770 830 L770 780 L872 780 L872 722 C872 691, 867 669, 857 655 C842 636, 822 626, 796 626 C770 626, 750 636, 735 655 C725 669, 719 691, 719 722 L719 820 C719 850, 725 873, 736 887 C751 906, 771 916, 797 916 C825 916, 845 906, 859 885 C866 874, 870 865, 871 855 C872 851, 872 840, 872 822 Z M525 300 L525 180 C525 154, 517 140, 500 140 C484 140, 476 154, 476 180 L476 300 C476 326, 484 340, 500 340 C517 340, 525 326, 525 300 Z M936 729 C936 818, 931 885, 921 929 C916 951, 905 970, 888 985 C871 1001, 852 1009, 829 1012 C759 1020, 654 1024, 512 1024 C371 1024, 265 1020, 195 1012 C173 1009, 154 1001, 137 985 C120 970, 109 951, 104 929 C94 886, 89 820, 89 729 C89 640, 94 573, 104 529 C109 506, 120 488, 137 472 C154 457, 173 449, 196 446 C265 438, 371 434, 512 434 C654 434, 759 438, 829 446 C852 449, 871 457, 888 472 C905 488, 916 506, 921 529 C931 572, 936 638, 936 729 Z M365 0 L424 0 L355 228 L355 383 L297 383 L297 228 C292 200, 281 159, 263 106 C249 67, 236 32, 225 0 L286 0 L327 150Z  M577 190 L577 290 C577 321, 572 343, 561 358 C546 377, 526 387, 500 387 C475 387, 455 377, 440 358 C430 343, 424 321, 424 290 L424 190 C424 160, 430 137, 440 123 C455 104, 475 94, 500 94 C526 94, 546 104, 561 123 C572 137, 577 160, 577 190 Z M768 98 L768 383 L716 383 L716 351 C696 375, 677 387, 657 387 C640 387, 629 380, 624 366 C621 356, 618 342, 618 323 L618 98 L671 98 L671 307 C671 321, 671 326, 672 327 C673 336, 677 340, 684 340 C694 340, 705 332, 716 315 L716 98Z "/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text1">
+<span style="color:#FFFFFF;font-family:Arial;font-size:24px;">Email</span>
+</div>
+<div id="wb_Text3">
+<span style="color:#FFFFFF;font-family:Arial;font-size:24px;"><a href="mailto:hoglet.interactive@gmail.com">hoglet.interactive@gmail.com</a></span>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text8">
+<span style="color:#FFFFFF;font-family:Arial;font-size:24px;">Links</span>
+</div>
+<div id="wb_CssMenu1" style="display:inline-block;width:100%;z-index:28;">
+<ul id="CssMenu1" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="https://sgda.sk/" target="_blank">SGDA</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="https://sergeyiwanski.github.io/gamedev/" target="_blank">Sergey&nbsp;Iwanski</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div id="wb_Shape1" style="display:inline-block;width:18px;height:64px;z-index:29;position:relative;">
+<div id="Shape1"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text10">
+<span style="color:#FFFFFF;font-family:Arial;font-size:12px;">Copyright © Hoglet Interactive. All right reserved.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+<div id="wb_Shape2" style="display:inline-block;width:18px;height:29px;z-index:37;position:relative;">
+<div id="Shape2"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </body>
 </html>
