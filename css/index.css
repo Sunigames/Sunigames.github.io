@@ -58,7 +58,7 @@ input:focus, textarea:focus, select:focus
 #header
 {
    box-sizing: border-box;
-   padding: 8px 15px 20px 15px;
+   padding: 8px 15px 16px 15px;
    margin-right: auto;
    margin-left: auto;
    max-width: 1140px;
@@ -87,7 +87,7 @@ input:focus, textarea:focus, select:focus
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   width: 41.66666667%;
+   width: 50%;
    text-align: left;
 }
 #header > .row > .col-2
@@ -96,7 +96,7 @@ input:focus, textarea:focus, select:focus
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   width: 58.33333333%;
+   width: 50%;
    text-align: right;
 }
 #header:before,
@@ -633,7 +633,7 @@ input:focus, textarea:focus, select:focus
 {
    color: #F5F5F5;
 }
-@media (min-width: 600px) 
+@media (min-width: 660px) 
 {
 .headerMenu .navbar-right .dropdown-menu
 {
@@ -687,7 +687,7 @@ input:focus, textarea:focus, select:focus
    border-bottom-color: #ED0000;
 }
 }
-@media (max-width: 600px) 
+@media (max-width: 660px) 
 {
 .headerMenu 
 {
@@ -722,7 +722,7 @@ input:focus, textarea:focus, select:focus
    line-height: 20px;
 }
 }
-@media (min-width: 600px) 
+@media (min-width: 660px) 
 {
 .headerMenu 
 {
@@ -1039,6 +1039,7 @@ input:focus, textarea:focus, select:focus
 }
 #wb_Image1
 {
+   height: 100%;
    margin: 0;
    vertical-align: top;
 }
@@ -1050,11 +1051,9 @@ input:focus, textarea:focus, select:focus
    padding: 0;
    display: block;
    width: 100%;
-   height: auto;
-   max-width: 921px;
-   margin-left: auto;
-   margin-right: auto;
+   height: 100%;
    vertical-align: top;
+   object-fit: scale-down;
 }
 #wb_assets
 {
