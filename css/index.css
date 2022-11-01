@@ -1549,11 +1549,11 @@ input:focus, textarea:focus, select:focus
 }
 #Shape3
 {
-   width: 380px;
-   height: 1px;
-   background-color: #FFFFFF;
+   width: 200px;
+   height: 2px;
+   background-color: #F5F5F5;
    background-image: none;
-   border: 0px #FFFFFF solid;
+   border: 0px #F5F5F5 solid;
 }
 #wb_Card4
 {
@@ -2527,9 +2527,9 @@ input:focus, textarea:focus, select:focus
 }
 #Shape4
 {
-   width: 380px;
-   height: 1px;
-   background-color: #FFFFFF;
+   width: 200px;
+   height: 2px;
+   background-color: #F5F5F5;
    background-image: none;
-   border: 0px #FFFFFF solid;
+   border: 0px #F5F5F5 solid;
 }
