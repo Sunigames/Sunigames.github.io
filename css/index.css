@@ -179,7 +179,7 @@ input:focus, textarea:focus, select:focus
    width: 100%;
    padding: 75px 0 75px 0;
 }
-@media (max-width: 768px)
+@media (max-width: 0px)
 {
 #games > .col-1
 {
@@ -230,10 +230,10 @@ input:focus, textarea:focus, select:focus
 {
    display: flex;
    position: relative;
-   padding: 65px 10px 50px 10px;
+   padding: 65px 0 50px 0;
    flex-direction: row;
    flex-wrap: wrap;
-   justify-content: flex-start;
+   justify-content: center;
    align-items: stretch;
    align-content: flex-start;
    margin-top: 0px;
@@ -246,7 +246,7 @@ input:focus, textarea:focus, select:focus
    box-sizing: border-box;
    font-size: 0;
 }
-@media all and (max-width:768px) 
+@media all and (max-width:0px) 
 {
 #storesCards
 {
@@ -842,8 +842,10 @@ input:focus, textarea:focus, select:focus
    flex-shrink: 1;
    flex-basis: 0%;
    align-self: auto;
+   min-width: 290px;
    box-sizing: border-box;
    margin: 20px 20px 20px 20px;
+   max-width: 290px;
    background-color: transparent;
    background-image: none;
    border: 0px solid transparent;
@@ -888,6 +890,7 @@ input:focus, textarea:focus, select:focus
    font-weight: bold;
    font-style: normal;
    font-size: 21px;
+   text-align: center;
 }
 #storesCard1-card-item2
 {
@@ -900,6 +903,7 @@ input:focus, textarea:focus, select:focus
    font-style: italic;
    font-size: 15px;
    line-height: 22.5px;
+   text-align: center;
 }
 #wb_storesCard2
 {
@@ -910,8 +914,10 @@ input:focus, textarea:focus, select:focus
    flex-shrink: 1;
    flex-basis: 0%;
    align-self: auto;
+   min-width: 290px;
    box-sizing: border-box;
    margin: 20px 20px 20px 20px;
+   max-width: 290px;
    background-color: transparent;
    background-image: none;
    border: 0px solid transparent;
@@ -956,6 +962,7 @@ input:focus, textarea:focus, select:focus
    font-weight: bold;
    font-style: normal;
    font-size: 21px;
+   text-align: center;
 }
 #storesCard2-card-item2
 {
@@ -968,6 +975,7 @@ input:focus, textarea:focus, select:focus
    font-style: italic;
    font-size: 15px;
    line-height: 22.5px;
+   text-align: center;
 }
 #wb_storesCard3
 {
@@ -978,8 +986,10 @@ input:focus, textarea:focus, select:focus
    flex-shrink: 1;
    flex-basis: 0%;
    align-self: auto;
+   min-width: 290px;
    box-sizing: border-box;
    margin: 20px 20px 20px 20px;
+   max-width: 290px;
    background-color: transparent;
    background-image: none;
    border: 0px solid transparent;
@@ -1024,6 +1034,7 @@ input:focus, textarea:focus, select:focus
    font-weight: bold;
    font-style: normal;
    font-size: 21px;
+   text-align: center;
 }
 #storesCard3-card-item2
 {
@@ -1036,6 +1047,7 @@ input:focus, textarea:focus, select:focus
    font-style: italic;
    font-size: 15px;
    line-height: 22.5px;
+   text-align: center;
 }
 #wb_Image1
 {
@@ -1142,17 +1154,15 @@ input:focus, textarea:focus, select:focus
 #LayoutGrid5
 {
    box-sizing: border-box;
-   padding: 0 10px 25px 10px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding: 0 0 25px 0;
    margin-right: auto;
    margin-left: auto;
    max-width: 1140px;
 }
-#LayoutGrid5 > .row
-{
-   margin-right: -10px;
-   margin-left: -10px;
-}
-#LayoutGrid5 > .row > .col-1
+#LayoutGrid5 > .col-1
 {
    box-sizing: border-box;
    font-size: 0;
@@ -1161,38 +1171,32 @@ input:focus, textarea:focus, select:focus
    padding-left: 10px;
    position: relative;
 }
-#LayoutGrid5 > .row > .col-1
+#LayoutGrid5 > .col-1
 {
-   float: left;
+   flex: 0 0 auto;
 }
-#LayoutGrid5 > .row > .col-1
+#LayoutGrid5 > .col-1
 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   width: 100%;
+   flex-basis: 100%;
+   max-width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   align-self: stretch;
+   align-items: flex-start;
+   justify-content: center;
    text-align: center;
 }
-#LayoutGrid5:before,
-#LayoutGrid5:after,
-#LayoutGrid5 .row:before,
-#LayoutGrid5 .row:after
+@media (max-width: 0px)
 {
-   display: table;
-   content: " ";
-}
-#LayoutGrid5:after,
-#LayoutGrid5 .row:after
+#LayoutGrid5 > .col-1
 {
-   clear: both;
-}
-@media (max-width: 480px)
-{
-#LayoutGrid5 > .row > .col-1
-{
-   float: none;
-   width: 100% !important;
+   flex-basis: 100% !important;
+   max-width: 100% !important;
 }
 }
 #wb_contact
@@ -1282,7 +1286,7 @@ input:focus, textarea:focus, select:focus
 #social
 {
    box-sizing: border-box;
-   padding: 50px 15px 40px 15px;
+   padding: 20px 15px 20px 15px;
    margin-right: auto;
    margin-left: auto;
    max-width: 1140px;
@@ -1736,7 +1740,7 @@ input:focus, textarea:focus, select:focus
 #LayoutGrid1
 {
    box-sizing: border-box;
-   padding: 30px 15px 20px 15px;
+   padding: 20px 15px 30px 15px;
    margin-right: auto;
    margin-left: auto;
    max-width: 1140px;
@@ -1746,7 +1750,7 @@ input:focus, textarea:focus, select:focus
    margin-right: -15px;
    margin-left: -15px;
 }
-#LayoutGrid1 > .row > .col-1, #LayoutGrid1 > .row > .col-2
+#LayoutGrid1 > .row > .col-1
 {
    box-sizing: border-box;
    font-size: 0;
@@ -1755,7 +1759,7 @@ input:focus, textarea:focus, select:focus
    padding-left: 15px;
    position: relative;
 }
-#LayoutGrid1 > .row > .col-1, #LayoutGrid1 > .row > .col-2
+#LayoutGrid1 > .row > .col-1
 {
    float: left;
 }
@@ -1765,17 +1769,14 @@ input:focus, textarea:focus, select:focus
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   width: 66.66666667%;
+   width: 100%;
    text-align: center;
 }
-#LayoutGrid1 > .row > .col-2
+#LayoutGrid1 > .row > .col-1 > .col-1-padding
 {
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   width: 33.33333333%;
-   text-align: center;
+   box-sizing: border-box;
+   width: 100%;
+   padding: 0 0 20px 0;
 }
 #LayoutGrid1:before,
 #LayoutGrid1:after,
@@ -1790,9 +1791,9 @@ input:focus, textarea:focus, select:focus
 {
    clear: both;
 }
-@media (max-width: 480px)
+@media (max-width: 660px)
 {
-#LayoutGrid1 > .row > .col-1, #LayoutGrid1 > .row > .col-2
+#LayoutGrid1 > .row > .col-1
 {
    float: none;
    width: 100%;
@@ -1815,26 +1816,26 @@ input:focus, textarea:focus, select:focus
 #LayoutGrid3
 {
    box-sizing: border-box;
-   padding: 0 15px 0 15px;
+   padding: 0 10px 0 10px;
    margin-right: auto;
    margin-left: auto;
    max-width: 1140px;
 }
 #LayoutGrid3 > .row
 {
-   margin-right: -15px;
-   margin-left: -15px;
+   margin-right: -10px;
+   margin-left: -10px;
 }
-#LayoutGrid3 > .row > .col-1
+#LayoutGrid3 > .row > .col-1, #LayoutGrid3 > .row > .col-2, #LayoutGrid3 > .row > .col-3
 {
    box-sizing: border-box;
    font-size: 0;
    min-height: 1px;
-   padding-right: 15px;
-   padding-left: 15px;
+   padding-right: 10px;
+   padding-left: 10px;
    position: relative;
 }
-#LayoutGrid3 > .row > .col-1
+#LayoutGrid3 > .row > .col-1, #LayoutGrid3 > .row > .col-2, #LayoutGrid3 > .row > .col-3
 {
    float: left;
 }
@@ -1844,8 +1845,26 @@ input:focus, textarea:focus, select:focus
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   width: 100%;
+   width: 50%;
    text-align: center;
+}
+#LayoutGrid3 > .row > .col-2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 41.66666667%;
+   text-align: left;
+}
+#LayoutGrid3 > .row > .col-3
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 8.33333333%;
+   text-align: left;
 }
 #LayoutGrid3:before,
 #LayoutGrid3:after,
@@ -1860,9 +1879,79 @@ input:focus, textarea:focus, select:focus
 {
    clear: both;
 }
+@media (max-width: 0px)
+{
+#LayoutGrid3 > .row > .col-1, #LayoutGrid3 > .row > .col-2, #LayoutGrid3 > .row > .col-3
+{
+   float: none;
+   width: 100%;
+}
+}
+#wb_LayoutGrid6
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: #121011;
+   background-image: none;
+   border: 0px solid #233140;
+   box-sizing: border-box;
+   margin: 0;
+}
+#LayoutGrid6
+{
+   box-sizing: border-box;
+   padding: 0 15px 0 15px;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 1140px;
+}
+#LayoutGrid6 > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#LayoutGrid6 > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#LayoutGrid6 > .row > .col-1
+{
+   float: left;
+}
+#LayoutGrid6 > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 100%;
+   text-align: center;
+}
+#LayoutGrid6:before,
+#LayoutGrid6:after,
+#LayoutGrid6 .row:before,
+#LayoutGrid6 .row:after
+{
+   display: table;
+   content: " ";
+}
+#LayoutGrid6:after,
+#LayoutGrid6 .row:after
+{
+   clear: both;
+}
 @media (max-width: 480px)
 {
-#LayoutGrid3 > .row > .col-1
+#LayoutGrid6 > .row > .col-1
 {
    float: none;
    width: 100%;
@@ -1937,27 +2026,6 @@ input:focus, textarea:focus, select:focus
    float: none;
    width: 100%;
 }
-}
-#wb_Text1 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 20px 0 5px 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_Text1 div
-{
-   text-align: center;
-}
-#wb_Text1
-{
-   display: inline-block;
-   margin: 0;
-   width: 268px;
-   height: 18px;
 }
 #wb_Text3 
 {
@@ -2093,6 +2161,14 @@ input:focus, textarea:focus, select:focus
    box-sizing: border-box;
    font-size: 0;
 }
+@media all and (max-width:0px) 
+{
+#CardContainer1
+{
+   flex-direction: column;
+   flex-wrap: nowrap;
+}
+}
 #wb_Card1
 {
    position: relative;
@@ -2100,11 +2176,12 @@ input:focus, textarea:focus, select:focus
    flex-direction: column;
    flex-grow: 1;
    flex-shrink: 1;
-   flex-basis: 33.33%;
+   flex-basis: 0%;
    align-self: auto;
+   min-width: 290px;
    box-sizing: border-box;
    margin: 20px 20px 20px 20px;
-   max-width: calc(33.33% - 40px);
+   max-width: 290px;
    background-color: transparent;
    background-image: none;
    border: 0px solid transparent;
@@ -2158,11 +2235,12 @@ input:focus, textarea:focus, select:focus
    flex-direction: column;
    flex-grow: 1;
    flex-shrink: 1;
-   flex-basis: 33.33%;
+   flex-basis: 0%;
    align-self: auto;
+   min-width: 290px;
    box-sizing: border-box;
    margin: 20px 20px 20px 20px;
-   max-width: calc(33.33% - 40px);
+   max-width: 290px;
    background-color: transparent;
    background-image: none;
    border: 0px solid transparent;
@@ -2216,11 +2294,12 @@ input:focus, textarea:focus, select:focus
    flex-direction: column;
    flex-grow: 1;
    flex-shrink: 1;
-   flex-basis: 33.33%;
+   flex-basis: 0%;
    align-self: auto;
+   min-width: 290px;
    box-sizing: border-box;
    margin: 20px 20px 20px 20px;
-   max-width: calc(33.33% - 40px);
+   max-width: 290px;
    background-color: transparent;
    background-image: none;
    border: 0px solid transparent;
@@ -2274,11 +2353,12 @@ input:focus, textarea:focus, select:focus
    flex-direction: column;
    flex-grow: 1;
    flex-shrink: 1;
-   flex-basis: 33.33%;
+   flex-basis: 0%;
    align-self: auto;
+   min-width: 290px;
    box-sizing: border-box;
    margin: 20px 20px 20px 20px;
-   max-width: calc(33.33% - 40px);
+   max-width: 290px;
    background-color: transparent;
    background-image: none;
    border: 0px solid transparent;
@@ -2332,11 +2412,12 @@ input:focus, textarea:focus, select:focus
    flex-direction: column;
    flex-grow: 1;
    flex-shrink: 1;
-   flex-basis: 33.33%;
+   flex-basis: 0%;
    align-self: auto;
+   min-width: 290px;
    box-sizing: border-box;
    margin: 20px 20px 20px 20px;
-   max-width: calc(33.33% - 40px);
+   max-width: 290px;
    background-color: transparent;
    background-image: none;
    border: 0px solid transparent;
@@ -2390,11 +2471,12 @@ input:focus, textarea:focus, select:focus
    flex-direction: column;
    flex-grow: 1;
    flex-shrink: 1;
-   flex-basis: 33.33%;
+   flex-basis: 0%;
    align-self: auto;
+   min-width: 290px;
    box-sizing: border-box;
    margin: 20px 20px 20px 20px;
-   max-width: calc(33.33% - 40px);
+   max-width: 290px;
    background-color: transparent;
    background-image: none;
    border: 0px solid transparent;
@@ -2440,92 +2522,6 @@ input:focus, textarea:focus, select:focus
    font-style: normal;
    font-size: 15px;
    line-height: 22.5px;
-}
-#Shape1
-{
-   width: 18px;
-   height: 64px;
-   background-color: #121011;
-   background-image: none;
-   border: 0px #FFFFFF solid;
-}
-#wb_LayoutGrid4
-{
-   clear: both;
-   position: relative;
-   table-layout: fixed;
-   display: table;
-   text-align: center;
-   width: 100%;
-   background-color: #121011;
-   background-image: none;
-   border: 0px solid #233140;
-   box-sizing: border-box;
-   margin: 0;
-}
-#LayoutGrid4
-{
-   box-sizing: border-box;
-   padding: 0 15px 0 15px;
-   margin-right: auto;
-   margin-left: auto;
-   max-width: 1140px;
-}
-#LayoutGrid4 > .row
-{
-   margin-right: -15px;
-   margin-left: -15px;
-}
-#LayoutGrid4 > .row > .col-1
-{
-   box-sizing: border-box;
-   font-size: 0;
-   min-height: 1px;
-   padding-right: 15px;
-   padding-left: 15px;
-   position: relative;
-}
-#LayoutGrid4 > .row > .col-1
-{
-   float: left;
-}
-#LayoutGrid4 > .row > .col-1
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   width: 100%;
-   text-align: center;
-}
-#LayoutGrid4:before,
-#LayoutGrid4:after,
-#LayoutGrid4 .row:before,
-#LayoutGrid4 .row:after
-{
-   display: table;
-   content: " ";
-}
-#LayoutGrid4:after,
-#LayoutGrid4 .row:after
-{
-   clear: both;
-}
-@media (max-width: 480px)
-{
-#LayoutGrid4 > .row > .col-1
-{
-   float: none;
-   width: 100%;
-}
-}
-#Shape2
-{
-   width: 18px;
-   height: 43px;
-   background-color: #121011;
-   background-image: none;
-   border: 0px #FFFFFF solid;
 }
 #wb_Heading1
 {
@@ -2638,4 +2634,90 @@ input:focus, textarea:focus, select:focus
    background-color: #F5F5F5;
    background-image: none;
    border: 0px #F5F5F5 solid;
+}
+#Shape1
+{
+   width: 18px;
+   height: 43px;
+   background-color: #121011;
+   background-image: none;
+   border: 0px #FFFFFF solid;
+}
+#wb_LayoutGrid4
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: #121011;
+   background-image: none;
+   border: 0px solid #233140;
+   box-sizing: border-box;
+   margin: 0;
+}
+#LayoutGrid4
+{
+   box-sizing: border-box;
+   padding: 0 15px 0 15px;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 1140px;
+}
+#LayoutGrid4 > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#LayoutGrid4 > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#LayoutGrid4 > .row > .col-1
+{
+   float: left;
+}
+#LayoutGrid4 > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 100%;
+   text-align: center;
+}
+#LayoutGrid4:before,
+#LayoutGrid4:after,
+#LayoutGrid4 .row:before,
+#LayoutGrid4 .row:after
+{
+   display: table;
+   content: " ";
+}
+#LayoutGrid4:after,
+#LayoutGrid4 .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#LayoutGrid4 > .row > .col-1
+{
+   float: none;
+   width: 100%;
+}
+}
+#Shape2
+{
+   width: 18px;
+   height: 43px;
+   background-color: #121011;
+   background-image: none;
+   border: 0px #FFFFFF solid;
 }
