@@ -23,15 +23,15 @@
 <script>
 $(document).ready(function()
 {
-   $("a[href*='#LayoutGrid1']").click(function(event)
+   $("a[href*='#header']").click(function(event)
    {
       event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid1').offset().top }, 600, 'easeOutCirc');
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
    });
    $("a[href*='#games']").click(function(event)
    {
       event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_games').offset().top-101 }, 600, 'easeOutSine');
+      $('html, body').stop().animate({ scrollTop: $('#wb_games').offset().top-160 }, 600, 'easeOutSine');
    });
    $("a[href*='#storesCards']").click(function(event)
    {
@@ -49,12 +49,12 @@ $(document).ready(function()
    $("a[href*='#assets']").click(function(event)
    {
       event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_assets').offset().top-101 }, 600, 'easeOutSine');
+      $('html, body').stop().animate({ scrollTop: $('#wb_assets').offset().top-128 }, 600, 'easeOutSine');
    });
    $("a[href*='#contact']").click(function(event)
    {
       event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_contact').offset().top-101 }, 600, 'easeOutSine');
+      $('html, body').stop().animate({ scrollTop: $('#wb_contact').offset().top-100 }, 600, 'easeOutSine');
    });
    $("a[href*='#social']").click(function(event)
    {
@@ -85,12 +85,12 @@ $(document).ready(function()
 </script>
 </head>
 <body>
-<div id="wb_LayoutGrid1">
-<div id="LayoutGrid1">
+<div id="wb_header">
+<div id="header">
 <div class="row">
 <div class="col-1">
-<div id="wb_Image2" style="display:inline-block;width:100%;height:auto;z-index:0;">
-<a href="#games"><img src="images/Hoglet_Logo_921x206.png" id="Image2" alt="" width="545" height="122"></a>
+<div id="wb_Image1" style="display:inline-block;width:100%;height:auto;z-index:0;">
+<a href="#games"><img src="images/Hoglet_Logo_921x206.png" id="Image1" alt="" width="455" height="102"></a>
 </div>
 </div>
 <div class="col-2">
@@ -300,12 +300,14 @@ $(document).ready(function()
 </div>
 <div id="wb_LayoutGrid7">
 <div id="LayoutGrid7">
+<div class="row">
 <div class="col-1">
 <div id="wb_Text4">
 <span style="color:#F5F5F5;font-family:Arial;font-size:20px;">Links to visit:</span>
 </div>
 <div id="wb_TextMenu1" style="display:inline-block;width:100%;z-index:30;">
-<span><a href="https://sgda.sk/" target="_blank">Slovak Game Developers Association</a></span><span><a href="https://madcookies.games/" target="_blank">Mad Cookies Studio</a></span><span><a href="https://hungame.blog/" target="_blank">Hungame Blog</a></span><span><a href="https://sergeyiwanski.github.io/gamedev/" target="_blank">Sergey Iwanski</a></span><span><a href="https://roimedia.vn/" target="_blank">ROI Media</a></span><span><a href="https://www.fpu.sk" target="_blank">Slovak Arts Council</a></span>
+<span><a href="https://sgda.sk/" target="_blank">SGDA</a></span><span><a href="https://madcookies.games/" target="_blank">Mad Cookies Studio</a></span><span><a href="https://hungame.blog/" target="_blank">Hungame Blog</a></span><span><a href="https://sergeyiwanski.github.io/gamedev/" target="_blank">Sergey Iwanski</a></span><span><a href="https://roimedia.vn/" target="_blank">ROI Media</a></span><span><a href="https://www.fpu.sk" target="_blank">Slovak Arts Council</a></span>
+</div>
 </div>
 </div>
 </div>

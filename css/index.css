@@ -38,7 +38,7 @@ input:focus, textarea:focus, select:focus
       background-attachment: scroll !important;
    }
 }
-#wb_LayoutGrid1
+#wb_header
 {
    clear: both;
    position: -webkit-sticky;
@@ -55,71 +55,69 @@ input:focus, textarea:focus, select:focus
    box-sizing: border-box;
    margin: 0;
 }
-#LayoutGrid1
+#header
 {
    box-sizing: border-box;
-   padding: 8px 10px 20px 10px;
+   padding: 8px 15px 16px 15px;
    margin-right: auto;
    margin-left: auto;
    max-width: 1140px;
 }
-#LayoutGrid1 > .row
+#header > .row
 {
-   margin-right: -10px;
-   margin-left: -10px;
+   margin-right: -15px;
+   margin-left: -15px;
 }
-#LayoutGrid1 > .row > .col-1, #LayoutGrid1 > .row > .col-2
+#header > .row > .col-1, #header > .row > .col-2
 {
    box-sizing: border-box;
    font-size: 0;
    min-height: 1px;
-   padding-right: 10px;
-   padding-left: 10px;
+   padding-right: 15px;
+   padding-left: 15px;
    position: relative;
 }
-#LayoutGrid1 > .row > .col-1, #LayoutGrid1 > .row > .col-2
+#header > .row > .col-1, #header > .row > .col-2
 {
    float: left;
-   height: 73px;
 }
-#LayoutGrid1 > .row > .col-1
+#header > .row > .col-1
 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   width: 58.33333333%;
+   width: 50%;
    text-align: left;
 }
-#LayoutGrid1 > .row > .col-2
+#header > .row > .col-2
 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   width: 41.66666667%;
+   width: 50%;
    text-align: right;
 }
-#LayoutGrid1:before,
-#LayoutGrid1:after,
-#LayoutGrid1 .row:before,
-#LayoutGrid1 .row:after
+#header:before,
+#header:after,
+#header .row:before,
+#header .row:after
 {
    display: table;
    content: " ";
 }
-#LayoutGrid1:after,
-#LayoutGrid1 .row:after
+#header:after,
+#header .row:after
 {
    clear: both;
 }
-@media (max-width: 333px)
+@media (max-width: 320px)
 {
-#LayoutGrid1 > .row > .col-1, #LayoutGrid1 > .row > .col-2
+#header > .row > .col-1, #header > .row > .col-2
 {
    float: none;
    width: 100% !important;
-   height: auto;
 }
 }
 #wb_games
@@ -635,7 +633,7 @@ input:focus, textarea:focus, select:focus
 {
    color: #F5F5F5;
 }
-@media (min-width: 760px) 
+@media (min-width: 720px) 
 {
 .headerMenu .navbar-right .dropdown-menu
 {
@@ -689,7 +687,7 @@ input:focus, textarea:focus, select:focus
    border-bottom-color: #ED0000;
 }
 }
-@media (max-width: 760px) 
+@media (max-width: 720px) 
 {
 .headerMenu 
 {
@@ -724,7 +722,7 @@ input:focus, textarea:focus, select:focus
    line-height: 20px;
 }
 }
-@media (min-width: 760px) 
+@media (min-width: 720px) 
 {
 .headerMenu 
 {
@@ -1856,15 +1854,17 @@ input:focus, textarea:focus, select:focus
 #LayoutGrid7
 {
    box-sizing: border-box;
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   padding: 30px 0 30px 0;
+   padding: 30px 15px 30px 15px;
    margin-right: auto;
    margin-left: auto;
    max-width: 1140px;
 }
-#LayoutGrid7 > .col-1
+#LayoutGrid7 > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#LayoutGrid7 > .row > .col-1
 {
    box-sizing: border-box;
    font-size: 0;
@@ -1873,32 +1873,38 @@ input:focus, textarea:focus, select:focus
    padding-left: 15px;
    position: relative;
 }
-#LayoutGrid7 > .col-1
+#LayoutGrid7 > .row > .col-1
 {
-   flex: 0 0 auto;
+   float: left;
 }
-#LayoutGrid7 > .col-1
+#LayoutGrid7 > .row > .col-1
 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   flex-basis: 100%;
-   max-width: 100%;
-   display: flex;
-   flex-wrap: wrap;
-   align-content: flex-start;
-   align-self: stretch;
-   align-items: flex-start;
-   justify-content: center;
+   width: 100%;
    text-align: center;
 }
-@media (max-width: 480px)
+#LayoutGrid7:before,
+#LayoutGrid7:after,
+#LayoutGrid7 .row:before,
+#LayoutGrid7 .row:after
 {
-#LayoutGrid7 > .col-1
+   display: table;
+   content: " ";
+}
+#LayoutGrid7:after,
+#LayoutGrid7 .row:after
 {
-   flex-basis: 100% !important;
-   max-width: 100% !important;
+   clear: both;
+}
+@media (max-width: 0px)
+{
+#LayoutGrid7 > .row > .col-1
+{
+   float: none;
+   width: 100%;
 }
 }
 #wb_LayoutGrid2
@@ -2665,25 +2671,6 @@ input:focus, textarea:focus, select:focus
    background-image: none;
    border: 0px #FFFFFF solid;
 }
-#wb_Image2
-{
-   margin: 0;
-   vertical-align: top;
-}
-#Image2
-{
-   border: 0px solid #000000;
-   border-radius: 0px;
-   box-sizing: border-box;
-   padding: 0;
-   display: block;
-   width: 100%;
-   height: auto;
-   max-width: 330px;
-   margin-left: auto;
-   margin-right: auto;
-   vertical-align: top;
-}
 #wb_Text4 
 {
    background-color: transparent;
@@ -2720,4 +2707,22 @@ input:focus, textarea:focus, select:focus
 #wb_TextMenu1 span
 {
    margin: 0 20px 0 0px;
+}
+#wb_Image1
+{
+   height: 100%;
+   margin: 0;
+   vertical-align: top;
+}
+#Image1
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   padding: 0;
+   display: block;
+   width: 100%;
+   height: 100%;
+   vertical-align: top;
+   object-fit: scale-down;
 }
