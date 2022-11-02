@@ -1216,7 +1216,7 @@ input:focus, textarea:focus, select:focus
 #contact
 {
    box-sizing: border-box;
-   padding: 60px 15px 5px 15px;
+   padding: 50px 15px 5px 15px;
    margin-right: auto;
    margin-left: auto;
    max-width: 1140px;
@@ -2536,7 +2536,7 @@ input:focus, textarea:focus, select:focus
 #Shape1
 {
    width: 18px;
-   height: 43px;
+   height: 100px;
    background-color: #121011;
    background-image: none;
    border: 0px #FFFFFF solid;
