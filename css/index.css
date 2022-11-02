@@ -2451,22 +2451,6 @@ input:focus, textarea:focus, select:focus
    background-image: none;
    border: 0px #F5F5F5 solid;
 }
-#wb_TextMenu1
-{
-   background-color: transparent;
-   background-image: none;
-   color: #D3D3D3;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   font-size: 13px;
-   margin: 0;
-   text-align: center;
-}
-#wb_TextMenu1 span
-{
-   margin: 0 15px 0 0px;
-}
 #wb_Image1
 {
    height: 100%;
