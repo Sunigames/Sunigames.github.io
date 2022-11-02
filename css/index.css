@@ -17,7 +17,7 @@ a
 }
 a:hover
 {
-   color: #FFFFFF;
+   color: #18BC9C;
    text-decoration: none;
 }
 input:focus, textarea:focus, select:focus
@@ -388,7 +388,7 @@ input:focus, textarea:focus, select:focus
 .headerMenu .dropdown-menu>li>a:focus 
 {
    text-decoration: none;
-   color: #F5F5F5;
+   color: #FFFFFF;
    background-color: #121011;
    background-image: none;
 }
@@ -396,7 +396,7 @@ input:focus, textarea:focus, select:focus
 .headerMenu .dropdown-menu>li>a.active:hover,
 .headerMenu .dropdown-menu>li>a.active:focus
 {
-   color: #F5F5F5;
+   color: #FFFFFF;
    background-color: #121011;
    background-image: none;
    text-decoration: none;
@@ -561,14 +561,14 @@ input:focus, textarea:focus, select:focus
 {
    background-color: #121011;
    background-image: none;
-   color: #F5F5F5;
+   color: #FFFFFF;
    text-decoration: none;
 }
 .headerMenu .navbar-nav>li>a.active,
 .headerMenu .navbar-nav>li>a.active:hover,
 .headerMenu .navbar-nav>li>a.active:focus
 {
-   color: #F5F5F5;
+   color: #FFFFFF;
    background-color: #121011;
    background-image: none;
 }
@@ -592,8 +592,8 @@ input:focus, textarea:focus, select:focus
 .headerMenu .navbar-nav>.dropdown>a:hover .caret,
 .headerMenu .navbar-nav>.dropdown>a:focus .caret
 {
-   border-top-color: #F5F5F5;
-   border-bottom-color: #F5F5F5;
+   border-top-color: #FFFFFF;
+   border-bottom-color: #FFFFFF;
 }
 .headerMenu .navbar-nav>.show>a,
 .headerMenu .navbar-nav>.show>a:hover,
@@ -601,14 +601,14 @@ input:focus, textarea:focus, select:focus
 {
    background-color: #121011;
    background-image: none;
-   color: #F5F5F5;
+   color: #FFFFFF;
 }
 .headerMenu .navbar-nav>.show>a .caret,
 .headerMenu .navbar-nav>.show>a:hover .caret,
 .headerMenu .navbar-nav>.show>a:focus .caret
 {
-   border-top-color: #F5F5F5;
-   border-bottom-color: #F5F5F5;
+   border-top-color: #FFFFFF;
+   border-bottom-color: #FFFFFF;
 }
 .headerMenu .navbar-nav>.dropdown>a .caret
 {
@@ -621,7 +621,7 @@ input:focus, textarea:focus, select:focus
 }
 .headerMenu .navbar-link:hover
 {
-   color: #F5F5F5;
+   color: #FFFFFF;
 }
 .headerMenu .navbar-header
 {
@@ -677,8 +677,8 @@ input:focus, textarea:focus, select:focus
 .headerMenu .navbar-nav>.dropdown>a:hover .caret,
 .headerMenu .navbar-nav>.dropdown>a:focus .caret
 {
-   border-top-color: #ED0000;
-   border-bottom-color: #ED0000;
+   border-top-color: #18BC9C;
+   border-bottom-color: #18BC9C;
 }
 }
 @media (max-width: 720px) 
@@ -732,7 +732,7 @@ input:focus, textarea:focus, select:focus
 .headerMenu .navbar-nav>li>a:hover,
 .headerMenu .navbar-nav>li>a:focus
 {
-   color: #ED0000;
+   color: #18BC9C;
    background-color: #121011;
    background-image: none;
 }
@@ -740,7 +740,7 @@ input:focus, textarea:focus, select:focus
 .headerMenu .navbar-nav>li>a.active:hover,
 .headerMenu .navbar-nav>li>a.active:focus
 {
-   color: #ED0000;
+   color: #18BC9C;
    background-color: #121011;
    background-image: none;
 }
@@ -750,12 +750,12 @@ input:focus, textarea:focus, select:focus
 {
    background-color: #121011;
    background-image: none;
-   color: #ED0000;
+   color: #18BC9C;
 }
 .headerMenu .navbar-nav>.dropdown>a:hover .caret
 {
-   border-top-color: #ED0000;
-   border-bottom-color: #ED0000;
+   border-top-color: #18BC9C;
+   border-bottom-color: #18BC9C;
 }
 .headerMenu .navbar-nav>.dropdown>a .caret
 {
@@ -766,15 +766,15 @@ input:focus, textarea:focus, select:focus
 .headerMenu .navbar-nav > li > a.active:hover > .caret,
 .headerMenu .navbar-nav > li > a.active:focus > .caret
 {
-   border-top-color: #ED0000;
-   border-bottom-color: #ED0000;
+   border-top-color: #18BC9C;
+   border-bottom-color: #18BC9C;
 }
 .headerMenu .navbar-nav>.show>a .caret,
 .headerMenu .navbar-nav>.show>a:hover .caret,
 .headerMenu .navbar-nav>.show>a:focus .caret
 {
-   border-top-color: #ED0000;
-   border-bottom-color: #ED0000;
+   border-top-color: #18BC9C;
+   border-bottom-color: #18BC9C;
 }
 .headerMenu .navbar-link
 {
@@ -1551,11 +1551,6 @@ input:focus, textarea:focus, select:focus
    font-size: 24px;
    margin: 0;
    text-align: center;
-}
-#Heading7 a
-{
-   color: inherit;
-   text-decoration: none;
 }
 #Shape3
 {
@@ -2437,11 +2432,6 @@ input:focus, textarea:focus, select:focus
    font-size: 24px;
    margin: 0;
    text-align: center;
-}
-#contxt a
-{
-   color: inherit;
-   text-decoration: none;
 }
 #Shape6
 {
