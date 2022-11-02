@@ -38,7 +38,7 @@ input:focus, textarea:focus, select:focus
       background-attachment: scroll !important;
    }
 }
-#wb_header
+#wb_LayoutGrid1
 {
    clear: both;
    position: -webkit-sticky;
@@ -55,67 +55,67 @@ input:focus, textarea:focus, select:focus
    box-sizing: border-box;
    margin: 0;
 }
-#header
+#LayoutGrid1
 {
    box-sizing: border-box;
-   padding: 8px 20px 16px 20px;
+   padding: 8px 10px 20px 10px;
    margin-right: auto;
    margin-left: auto;
    max-width: 1140px;
 }
-#header > .row
+#LayoutGrid1 > .row
 {
-   margin-right: -20px;
-   margin-left: -20px;
+   margin-right: -10px;
+   margin-left: -10px;
 }
-#header > .row > .col-1, #header > .row > .col-2
+#LayoutGrid1 > .row > .col-1, #LayoutGrid1 > .row > .col-2
 {
    box-sizing: border-box;
    font-size: 0;
    min-height: 1px;
-   padding-right: 20px;
-   padding-left: 20px;
+   padding-right: 10px;
+   padding-left: 10px;
    position: relative;
 }
-#header > .row > .col-1, #header > .row > .col-2
+#LayoutGrid1 > .row > .col-1, #LayoutGrid1 > .row > .col-2
 {
    float: left;
-   height: 81px;
+   height: 73px;
 }
-#header > .row > .col-1
+#LayoutGrid1 > .row > .col-1
 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   width: 50%;
+   width: 58.33333333%;
    text-align: left;
 }
-#header > .row > .col-2
+#LayoutGrid1 > .row > .col-2
 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   width: 50%;
+   width: 41.66666667%;
    text-align: right;
 }
-#header:before,
-#header:after,
-#header .row:before,
-#header .row:after
+#LayoutGrid1:before,
+#LayoutGrid1:after,
+#LayoutGrid1 .row:before,
+#LayoutGrid1 .row:after
 {
    display: table;
    content: " ";
 }
-#header:after,
-#header .row:after
+#LayoutGrid1:after,
+#LayoutGrid1 .row:after
 {
    clear: both;
 }
-@media (max-width: 0px)
+@media (max-width: 333px)
 {
-#header > .row > .col-1, #header > .row > .col-2
+#LayoutGrid1 > .row > .col-1, #LayoutGrid1 > .row > .col-2
 {
    float: none;
    width: 100% !important;
@@ -269,7 +269,7 @@ input:focus, textarea:focus, select:focus
 {
    font-family: Arial;
    font-weight: normal;
-   font-size: 19px;
+   font-size: 16px;
    font-style: normal;
    color: #F5F5F5;
    text-align: right;
@@ -369,11 +369,11 @@ input:focus, textarea:focus, select:focus
    padding: 5px 0;
    margin: 2px 0 0;
    list-style: none;
-   font-size: 19px;
+   font-size: 16px;
    background-color: #121011;
    background-image: none;
    border: 1px solid rgba(18,16,17,1.00);
-   border-radius: 6px;
+   border-radius: 4px;
    background-clip: padding-box;
 }
 .headerMenu .dropdown-menu .divider
@@ -536,10 +536,10 @@ input:focus, textarea:focus, select:focus
 {
    position: relative;
    float: right;
-   padding: 17px 10px 16px 10px;
+   padding: 16px 10px 15px 10px;
    background-color: transparent;
    border: 1px solid transparent;
-   border-radius: 6px;
+   border-radius: 4px;
 }
 .headerMenu .navbar-toggle .icon-bar 
 {
@@ -635,7 +635,7 @@ input:focus, textarea:focus, select:focus
 {
    color: #F5F5F5;
 }
-@media (min-width: 720px) 
+@media (min-width: 760px) 
 {
 .headerMenu .navbar-right .dropdown-menu
 {
@@ -689,7 +689,7 @@ input:focus, textarea:focus, select:focus
    border-bottom-color: #ED0000;
 }
 }
-@media (max-width: 720px) 
+@media (max-width: 760px) 
 {
 .headerMenu 
 {
@@ -724,14 +724,14 @@ input:focus, textarea:focus, select:focus
    line-height: 20px;
 }
 }
-@media (min-width: 720px) 
+@media (min-width: 760px) 
 {
 .headerMenu 
 {
    background-color: transparent;
    background-image: none;
    border: 1px solid rgba(18,16,17,0.00);
-   border-radius: 6px;
+   border-radius: 4px;
 }
 .headerMenu .navbar-nav>li>a
 {
@@ -795,13 +795,13 @@ input:focus, textarea:focus, select:focus
 }
 .headerMenu .navbar-nav > li:first-child > a
 {
-   border-top-left-radius: 6px;
-   border-bottom-left-radius: 6px;
+   border-top-left-radius: 4px;
+   border-bottom-left-radius: 4px;
 }
 .headerMenu .dropdown-menu > li:last-child > a
 {
-   border-bottom-left-radius: 6px;
-   border-bottom-right-radius: 6px;
+   border-bottom-left-radius: 4px;
+   border-bottom-right-radius: 4px;
 }
 #headerMenu i
 {
@@ -1050,21 +1050,6 @@ input:focus, textarea:focus, select:focus
    font-size: 15px;
    line-height: 22.5px;
    text-align: center;
-}
-#wb_Image1
-{
-   margin: 0;
-   vertical-align: top;
-}
-#Image1
-{
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
-   display: inline-block;
-   width: 364px;
-   height: 81px;
-   vertical-align: top;
 }
 #wb_assets
 {
@@ -1854,6 +1839,68 @@ input:focus, textarea:focus, select:focus
    width: 100%;
 }
 }
+#wb_LayoutGrid7
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: #121011;
+   background-image: none;
+   border: 0px solid #2C3E50;
+   box-sizing: border-box;
+   margin: 0;
+}
+#LayoutGrid7
+{
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding: 30px 0 30px 0;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 1140px;
+}
+#LayoutGrid7 > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#LayoutGrid7 > .col-1
+{
+   flex: 0 0 auto;
+}
+#LayoutGrid7 > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   flex-basis: 100%;
+   max-width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   align-self: stretch;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+@media (max-width: 480px)
+{
+#LayoutGrid7 > .col-1
+{
+   flex-basis: 100% !important;
+   max-width: 100% !important;
+}
+}
 #wb_LayoutGrid2
 {
    clear: both;
@@ -2535,7 +2582,7 @@ input:focus, textarea:focus, select:focus
 #Shape1
 {
    width: 18px;
-   height: 100px;
+   height: 85px;
    background-color: #121011;
    background-image: none;
    border: 0px #FFFFFF solid;
@@ -2617,4 +2664,60 @@ input:focus, textarea:focus, select:focus
    background-color: #121011;
    background-image: none;
    border: 0px #FFFFFF solid;
+}
+#wb_Image2
+{
+   margin: 0;
+   vertical-align: top;
+}
+#Image2
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   padding: 0;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 330px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
+}
+#wb_Text4 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 20px 0 10px 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text4 div
+{
+   text-align: center;
+}
+#wb_Text4
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#wb_TextMenu1
+{
+   background-color: transparent;
+   background-image: none;
+   color: #D3D3D3;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+   margin: 0;
+   text-align: center;
+}
+#wb_TextMenu1 span
+{
+   margin: 0 20px 0 0px;
 }
