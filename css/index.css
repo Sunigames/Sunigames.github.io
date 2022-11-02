@@ -58,28 +58,29 @@ input:focus, textarea:focus, select:focus
 #header
 {
    box-sizing: border-box;
-   padding: 8px 15px 16px 15px;
+   padding: 8px 20px 16px 20px;
    margin-right: auto;
    margin-left: auto;
    max-width: 1140px;
 }
 #header > .row
 {
-   margin-right: -15px;
-   margin-left: -15px;
+   margin-right: -20px;
+   margin-left: -20px;
 }
 #header > .row > .col-1, #header > .row > .col-2
 {
    box-sizing: border-box;
    font-size: 0;
    min-height: 1px;
-   padding-right: 15px;
-   padding-left: 15px;
+   padding-right: 20px;
+   padding-left: 20px;
    position: relative;
 }
 #header > .row > .col-1, #header > .row > .col-2
 {
    float: left;
+   height: 81px;
 }
 #header > .row > .col-1
 {
@@ -112,12 +113,13 @@ input:focus, textarea:focus, select:focus
 {
    clear: both;
 }
-@media (max-width: 320px)
+@media (max-width: 0px)
 {
 #header > .row > .col-1, #header > .row > .col-2
 {
    float: none;
    width: 100% !important;
+   height: auto;
 }
 }
 #wb_games
@@ -266,7 +268,7 @@ input:focus, textarea:focus, select:focus
 .headerMenu .nav
 {
    font-family: Arial;
-   font-weight: bold;
+   font-weight: normal;
    font-size: 19px;
    font-style: normal;
    color: #F5F5F5;
@@ -307,7 +309,7 @@ input:focus, textarea:focus, select:focus
 {
    margin-right: auto;
    margin-left: auto;
-   padding: 0;
+   padding: 0 0 0 30px;
 }
 .headerMenu .container:before,
 .headerMenu .container:after 
@@ -633,7 +635,7 @@ input:focus, textarea:focus, select:focus
 {
    color: #F5F5F5;
 }
-@media (min-width: 660px) 
+@media (min-width: 720px) 
 {
 .headerMenu .navbar-right .dropdown-menu
 {
@@ -687,11 +689,11 @@ input:focus, textarea:focus, select:focus
    border-bottom-color: #ED0000;
 }
 }
-@media (max-width: 660px) 
+@media (max-width: 720px) 
 {
 .headerMenu 
 {
-   background-color: #121011;
+   background-color: transparent;
    background-image: none;
    border: 1px solid rgba(18,16,17,0.00);
 }
@@ -722,11 +724,11 @@ input:focus, textarea:focus, select:focus
    line-height: 20px;
 }
 }
-@media (min-width: 660px) 
+@media (min-width: 720px) 
 {
 .headerMenu 
 {
-   background-color: #121011;
+   background-color: transparent;
    background-image: none;
    border: 1px solid rgba(18,16,17,0.00);
    border-radius: 6px;
@@ -1051,7 +1053,6 @@ input:focus, textarea:focus, select:focus
 }
 #wb_Image1
 {
-   height: 100%;
    margin: 0;
    vertical-align: top;
 }
@@ -1059,13 +1060,11 @@ input:focus, textarea:focus, select:focus
 {
    border: 0px solid #000000;
    border-radius: 0px;
-   box-sizing: border-box;
    padding: 0;
-   display: block;
-   width: 100%;
-   height: 100%;
+   display: inline-block;
+   width: 364px;
+   height: 81px;
    vertical-align: top;
-   object-fit: scale-down;
 }
 #wb_assets
 {
