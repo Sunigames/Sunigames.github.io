@@ -55,7 +55,7 @@ input:focus, textarea:focus, select:focus
 #logo
 {
    box-sizing: border-box;
-   padding: 11px 2px 10px 2px;
+   padding: 10px 2px 9px 2px;
    margin-right: auto;
    margin-left: auto;
    max-width: 970px;
@@ -77,7 +77,7 @@ input:focus, textarea:focus, select:focus
 #logo > .row > .col-1
 {
    float: left;
-   height: 79px;
+   height: 71px;
 }
 #logo > .row > .col-1
 {
@@ -285,7 +285,9 @@ input:focus, textarea:focus, select:focus
    bottom: 0%;
    left: 0;
    width: 100%;
-   height: 50px;
+   height: 0px;
+   -webkit-transition: height 2000ms ease;
+   transition: height 2000ms ease;
 }
 #games-divider-bottom svg
 {
@@ -301,6 +303,10 @@ input:focus, textarea:focus, select:focus
    fill: #121011;
    transform-origin: bottom;
    transform: rotateY(0deg);
+}
+#games-divider-bottom.show
+{
+   height: 50px;
 }
 #wb_storesCards
 {
@@ -844,7 +850,9 @@ input:focus, textarea:focus, select:focus
    bottom: 0%;
    left: 0;
    width: 100%;
-   height: 50px;
+   height: 0px;
+   -webkit-transition: height 2000ms ease;
+   transition: height 2000ms ease;
 }
 #LayoutGrid5-divider-bottom svg
 {
@@ -860,6 +868,10 @@ input:focus, textarea:focus, select:focus
    fill: #121011;
    transform-origin: bottom;
    transform: rotateY(0deg);
+}
+#LayoutGrid5-divider-bottom.show
+{
+   height: 50px;
 }
 #wb_contact
 {
@@ -2127,7 +2139,7 @@ input:focus, textarea:focus, select:focus
 {
    border: 0px solid #000000;
    border-radius: 0px;
-   padding: 0 33px 0 0;
+   padding: 0;
    display: inline-block;
    width: 100%;
    height: 100%;
