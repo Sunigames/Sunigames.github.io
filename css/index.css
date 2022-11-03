@@ -55,23 +55,23 @@ input:focus, textarea:focus, select:focus
 #logo
 {
    box-sizing: border-box;
-   padding: 11px 15px 10px 15px;
+   padding: 11px 2px 10px 2px;
    margin-right: auto;
    margin-left: auto;
-   max-width: 1024px;
+   max-width: 970px;
 }
 #logo > .row
 {
-   margin-right: -15px;
-   margin-left: -15px;
+   margin-right: -2px;
+   margin-left: -2px;
 }
 #logo > .row > .col-1
 {
    box-sizing: border-box;
    font-size: 0;
    min-height: 1px;
-   padding-right: 15px;
-   padding-left: 15px;
+   padding-right: 2px;
+   padding-left: 2px;
    position: relative;
 }
 #logo > .row > .col-1
@@ -101,7 +101,7 @@ input:focus, textarea:focus, select:focus
 {
    clear: both;
 }
-@media (max-width: 320px)
+@media (max-width: 240px)
 {
 #logo > .row > .col-1
 {
@@ -408,8 +408,8 @@ input:focus, textarea:focus, select:focus
 }
 #wb_storesCard1:hover #storesCard1-card-item0
 {
-   -webkit-transform: rotate(0deg) scale(1.1,1.1) ;
-   transform: rotate(0deg) scale(1.1,1.1) ;
+   -webkit-transform: rotate(0deg) scale(1.05,1.05) ;
+   transform: rotate(0deg) scale(1.05,1.05) ;
    -webkit-transition: -webkit-transform 100ms linear 0ms;
    transition: transform 100ms linear 0ms;
 }
@@ -524,8 +524,8 @@ input:focus, textarea:focus, select:focus
 }
 #wb_storesCard2:hover #storesCard2-card-item0
 {
-   -webkit-transform: rotate(0deg) scale(1.1,1.1) ;
-   transform: rotate(0deg) scale(1.1,1.1) ;
+   -webkit-transform: rotate(0deg) scale(1.05,1.05) ;
+   transform: rotate(0deg) scale(1.05,1.05) ;
    -webkit-transition: -webkit-transform 100ms linear 0ms;
    transition: transform 100ms linear 0ms;
 }
@@ -640,8 +640,8 @@ input:focus, textarea:focus, select:focus
 }
 #wb_storesCard3:hover #storesCard3-card-item0
 {
-   -webkit-transform: rotate(0deg) scale(1.1,1.1) ;
-   transform: rotate(0deg) scale(1.1,1.1) ;
+   -webkit-transform: rotate(0deg) scale(1.05,1.05) ;
+   transform: rotate(0deg) scale(1.05,1.05) ;
    -webkit-transition: -webkit-transform 100ms linear 0ms;
    transition: transform 100ms linear 0ms;
 }
@@ -1545,7 +1545,7 @@ input:focus, textarea:focus, select:focus
 {
    display: flex;
    position: relative;
-   padding: 50px 10px 50px 10px;
+   padding: 50px 0 50px 0;
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: center;
@@ -1581,6 +1581,7 @@ input:focus, textarea:focus, select:focus
    min-width: 290px;
    box-sizing: border-box;
    margin: 20px 20px 20px 20px;
+   max-width: 290px;
    background-color: transparent;
    background-image: none;
    border: 0px solid transparent;
@@ -1617,8 +1618,8 @@ input:focus, textarea:focus, select:focus
 }
 #wb_Card1:hover #Card1-card-item0
 {
-   -webkit-transform: rotate(0deg) scale(1.1,1.1) ;
-   transform: rotate(0deg) scale(1.1,1.1) ;
+   -webkit-transform: rotate(0deg) scale(1.05,1.05) ;
+   transform: rotate(0deg) scale(1.05,1.05) ;
    -webkit-transition: -webkit-transform 100ms linear 0ms;
    transition: transform 100ms linear 0ms;
 }
@@ -1646,6 +1647,7 @@ input:focus, textarea:focus, select:focus
    min-width: 290px;
    box-sizing: border-box;
    margin: 20px 20px 20px 20px;
+   max-width: 290px;
    background-color: transparent;
    background-image: none;
    border: 0px solid transparent;
@@ -1682,8 +1684,8 @@ input:focus, textarea:focus, select:focus
 }
 #wb_Card2:hover #Card2-card-item0
 {
-   -webkit-transform: rotate(0deg) scale(1.1,1.1) ;
-   transform: rotate(0deg) scale(1.1,1.1) ;
+   -webkit-transform: rotate(0deg) scale(1.05,1.05) ;
+   transform: rotate(0deg) scale(1.05,1.05) ;
    -webkit-transition: -webkit-transform 100ms linear 0ms;
    transition: transform 100ms linear 0ms;
 }
@@ -1711,6 +1713,7 @@ input:focus, textarea:focus, select:focus
    min-width: 290px;
    box-sizing: border-box;
    margin: 20px 20px 20px 20px;
+   max-width: 290px;
    background-color: transparent;
    background-image: none;
    border: 0px solid transparent;
@@ -1747,8 +1750,8 @@ input:focus, textarea:focus, select:focus
 }
 #wb_Card6:hover #Card6-card-item0
 {
-   -webkit-transform: rotate(0deg) scale(1.1,1.1) ;
-   transform: rotate(0deg) scale(1.1,1.1) ;
+   -webkit-transform: rotate(0deg) scale(1.05,1.05) ;
+   transform: rotate(0deg) scale(1.05,1.05) ;
    -webkit-transition: -webkit-transform 100ms linear 0ms;
    transition: transform 100ms linear 0ms;
 }
@@ -1776,6 +1779,7 @@ input:focus, textarea:focus, select:focus
    min-width: 290px;
    box-sizing: border-box;
    margin: 20px 20px 20px 20px;
+   max-width: 290px;
    background-color: transparent;
    background-image: none;
    border: 0px solid transparent;
@@ -1812,8 +1816,8 @@ input:focus, textarea:focus, select:focus
 }
 #wb_Card8:hover #Card8-card-item0
 {
-   -webkit-transform: rotate(0deg) scale(1.1,1.1) ;
-   transform: rotate(0deg) scale(1.1,1.1) ;
+   -webkit-transform: rotate(0deg) scale(1.05,1.05) ;
+   transform: rotate(0deg) scale(1.05,1.05) ;
    -webkit-transition: -webkit-transform 100ms linear 0ms;
    transition: transform 100ms linear 0ms;
 }
@@ -1841,6 +1845,7 @@ input:focus, textarea:focus, select:focus
    min-width: 290px;
    box-sizing: border-box;
    margin: 20px 20px 20px 20px;
+   max-width: 290px;
    background-color: transparent;
    background-image: none;
    border: 0px solid transparent;
@@ -1877,8 +1882,8 @@ input:focus, textarea:focus, select:focus
 }
 #wb_Card9:hover #Card9-card-item0
 {
-   -webkit-transform: rotate(0deg) scale(1.1,1.1) ;
-   transform: rotate(0deg) scale(1.1,1.1) ;
+   -webkit-transform: rotate(0deg) scale(1.05,1.05) ;
+   transform: rotate(0deg) scale(1.05,1.05) ;
    -webkit-transition: -webkit-transform 100ms linear 0ms;
    transition: transform 100ms linear 0ms;
 }
@@ -1906,6 +1911,7 @@ input:focus, textarea:focus, select:focus
    min-width: 290px;
    box-sizing: border-box;
    margin: 20px 20px 20px 20px;
+   max-width: 290px;
    background-color: transparent;
    background-image: none;
    border: 0px solid transparent;
@@ -1942,8 +1948,8 @@ input:focus, textarea:focus, select:focus
 }
 #wb_Card10:hover #Card10-card-item0
 {
-   -webkit-transform: rotate(0deg) scale(1.1,1.1) ;
-   transform: rotate(0deg) scale(1.1,1.1) ;
+   -webkit-transform: rotate(0deg) scale(1.05,1.05) ;
+   transform: rotate(0deg) scale(1.05,1.05) ;
    -webkit-transition: -webkit-transform 100ms linear 0ms;
    transition: transform 100ms linear 0ms;
 }
@@ -2108,20 +2114,20 @@ input:focus, textarea:focus, select:focus
 #Breadcrumb1 > li + li:before
 {
    content: "|";
-   padding: 0 20px;
+   padding: 0 14px;
    color: #E1E1E1;
 }
-#wb_Image2
+#wb_Hoglet_logo
 {
    height: 100%;
    margin: 0;
    vertical-align: top;
 }
-#Image2
+#Hoglet_logo
 {
    border: 0px solid #000000;
    border-radius: 0px;
-   padding: 0;
+   padding: 0 33px 0 0;
    display: inline-block;
    width: 100%;
    height: 100%;
