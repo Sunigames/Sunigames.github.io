@@ -15,51 +15,39 @@
 <link href="css/index.css" rel="stylesheet">
 <script src="js/jquery-1.12.4.min.js"></script>
 <script src="js/jquery.ui.effect.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/util.min.js"></script>
-<script src="js/collapse.min.js"></script>
-<script src="js/dropdown.min.js"></script>
 <script src="js/wwb17.min.js"></script>
 <script>
 $(document).ready(function()
 {
-   $("a[href*='#header']").click(function(event)
+   $("a[href*='#logo']").click(function(event)
    {
       event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+      $('html, body').stop().animate({ scrollTop: $('#wb_logo').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#LayoutGrid1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid1').offset().top }, 600, 'easeOutCirc');
    });
    $("a[href*='#games']").click(function(event)
    {
       event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_games').offset().top-160 }, 600, 'easeOutSine');
+      $('html, body').stop().animate({ scrollTop: $('#wb_games').offset().top-157 }, 600, 'easeOutSine');
    });
    $("a[href*='#storesCards']").click(function(event)
    {
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#storesCards').offset().top }, 600, 'easeOutExpo');
    });
-   $('#headerMenu .dropdown-toggle').dropdown({popperConfig:{placement:'bottom-start',modifiers:{computeStyle:{gpuAcceleration:false}}}});
-   $(document).on('click','.headerMenu-navbar-collapse.show',function(e)
-   {
-      if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) 
-      {
-         $(this).collapse('hide');
-      }
-   });
    $("a[href*='#assets']").click(function(event)
    {
       event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_assets').offset().top-135 }, 600, 'easeOutSine');
+      $('html, body').stop().animate({ scrollTop: $('#wb_assets').offset().top-55 }, 600, 'easeOutSine');
    });
    $("a[href*='#contact']").click(function(event)
    {
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_contact').offset().top-55 }, 600, 'easeOutSine');
-   });
-   $("a[href*='#social']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_social').offset().top-64 }, 600, 'easeOutSine');
    });
    $("a[href*='#LayoutGrid7']").click(function(event)
    {
@@ -85,40 +73,28 @@ $(document).ready(function()
 </script>
 </head>
 <body>
-<div id="wb_header">
-<div id="header">
+<div id="wb_logo">
+<div id="logo">
 <div class="row">
 <div class="col-1">
-<div id="wb_Image1" style="display:inline-block;width:100%;height:auto;z-index:0;">
-<img src="images/Hoglet_Logo_921x206.png" id="Image1" alt="" width="535" height="120">
+<div id="wb_Image2" style="display:inline-block;width:353px;height:79px;z-index:0;">
+<img src="images/Hoglet_Logo_921x206.png" id="Image2" alt="" width="353" height="79">
 </div>
 </div>
-<div class="col-2">
-<div id="wb_headerMenu" style="display:inline-block;width:100%;text-align:right;z-index:1;">
-<div id="headerMenu" class="headerMenu" style="width:100%;height:auto !important;">
-<div class="container">
-<div class="navbar-header">
-<button title="Hamburger Menu" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".headerMenu-navbar-collapse">
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
 </div>
-<div class="headerMenu-navbar-collapse collapse">
-<ul class="nav navbar-nav">
-<li class="nav-item">
-<a href="#games" class="nav-link">Games</a>
-</li>
-<li class="nav-item">
-<a href="#assets" class="nav-link">Assets</a>
-</li>
-<li class="nav-item">
-<a href="#contact" class="nav-link">Contact</a>
-</li>
+</div>
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_Breadcrumb1" style="display:inline-block;width:100%;z-index:1;vertical-align:top;">
+<ul id="Breadcrumb1">
+<li><a href="#games">GAMES</a></li>
+<li><a href="#assets">ASSETS</a></li>
+<li><a href="#contact">CONTACT</a></li>
 </ul>
-</div>
-</div>
-</div>
+
 </div>
 </div>
 </div>
@@ -128,6 +104,10 @@ $(document).ready(function()
 <div id="games-video"><video src="web_video.mp4" autoplay loop muted playsinline></video>
 </div>
 <div id="games-overlay"></div>
+<div id="games-divider-bottom">
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1440 320">
+<path class="divider-fill"  d="M0,0L0,256L42.4,256L42.4,256L84.7,256L84.7,0L127.1,0L127.1,96L169.4,96L169.4,224L211.8,224L211.8,224L254.1,224L254.1,128L296.5,128L296.5,32L338.8,32L338.8,160L381.2,160L381.2,128L423.5,128L423.5,192L465.9,192L465.9,256L508.2,256L508.2,288L550.6,288L550.6,64L592.9,64L592.9,192L635.3,192L635.3,128L677.6,128L677.6,64L720,64L720,128L762.4,128L762.4,224L804.7,224L804.7,160L847.1,160L847.1,192L889.4,192L889.4,256L931.8,256L931.8,32L974.1,32L974.1,64L1016.5,64L1016.5,288L1058.8,288L1058.8,256L1101.2,256L1101.2,128L1143.5,128L1143.5,160L1185.9,160L1185.9,64L1228.2,64L1228.2,160L1270.6,160L1270.6,288L1312.9,288L1312.9,224L1355.3,224L1355.3,128L1397.6,128L1397.6,192L1440,192L1440,320L1397.6,320L1397.6,320L1355.3,320L1355.3,320L1312.9,320L1312.9,320L1270.6,320L1270.6,320L1228.2,320L1228.2,320L1185.9,320L1185.9,320L1143.5,320L1143.5,320L1101.2,320L1101.2,320L1058.8,320L1058.8,320L1016.5,320L1016.5,320L974.1,320L974.1,320L931.8,320L931.8,320L889.4,320L889.4,320L847.1,320L847.1,320L804.7,320L804.7,320L762.4,320L762.4,320L720,320L720,320L677.6,320L677.6,320L635.3,320L635.3,320L592.9,320L592.9,320L550.6,320L550.6,320L508.2,320L508.2,320L465.9,320L465.9,320L423.5,320L423.5,320L381.2,320L381.2,320L338.8,320L338.8,320L296.5,320L296.5,320L254.1,320L254.1,320L211.8,320L211.8,320L169.4,320L169.4,320L127.1,320L127.1,320L84.7,320L84.7,320L42.4,320L42.4,320L0,320L0,320Z"></path>
+</svg></div>
 <div id="games">
 <div class="col-1">
 <div id="wb_Heading1" style="display:inline-block;width:100%;z-index:5;">
@@ -142,21 +122,24 @@ $(document).ready(function()
    <div id="storesCard1-card-body">
       <a href="https://store.steampowered.com/app/2091700/RollCats/" target="_blank" title="RollCats" class="stretched-link"><img id="storesCard1-card-item0" src="images/RollCats_pic.jpg" width="500" height="330" alt="" title="RollCats"></a>
       <div id="storesCard1-card-item1">RollCats</div>
-      <div id="storesCard1-card-item2">Intergalactic Motocat Championship <br>- play free demo on Steam and add RollCats to your wishlist.</div>
+      <div id="storesCard1-card-item2"><a href="https://store.steampowered.com/app/2091700/RollCats/" target="_blank" class="stretched-link"><i class="fa fa-gamepad"></i></a></div>
+      <div id="storesCard1-card-item3">Intergalactic Motocat Championship <br>- try the demo and wishlist it on Steam</div>
    </div>
 </div>
 <div id="wb_storesCard2" style="display:flex;text-align:center;z-index:3;" class="card">
    <div id="storesCard2-card-body">
       <a href="https://hoglet.itch.io/river-strike" target="_blank" class="stretched-link"><img id="storesCard2-card-item0" src="images/RiverStrike_pic.jpg" width="500" height="330" alt="River Strike" title=""></a>
       <div id="storesCard2-card-item1">River Strike</div>
-      <div id="storesCard2-card-item2">Tribute to great classic "River Raid" <br>- play it on PC or Android phone.</div>
+      <div id="storesCard2-card-item2"><a href="https://hoglet.itch.io/river-strike" target="_blank" class="stretched-link"><i class="fa fa-gamepad"></i></a></div>
+      <div id="storesCard2-card-item3">Tribute to great classic "River Raid" <br>- play it on PC or on Android</div>
    </div>
 </div>
 <div id="wb_storesCard3" style="display:flex;text-align:center;z-index:4;" class="card">
    <div id="storesCard3-card-body">
       <a href="https://play.google.com/store/apps/details?id=com.SuniGames.BB8XmasRun" target="_blank" class="stretched-link"><img id="storesCard3-card-item0" src="images/BB8_pic.jpg" width="500" height="330" alt="" title=""></a>
       <div id="storesCard3-card-item1">BB8 Xmas roll</div>
-      <div id="storesCard3-card-item2">Fan to fan Star Wars game <br>- help BB-8 to collect Christmas presents on Android.</div>
+      <div id="storesCard3-card-item2"><a href="https://play.google.com/store/apps/details?id=com.SuniGames.BB8XmasRun" target="_blank" class="stretched-link"><i class="fa fa-gamepad"></i></a></div>
+      <div id="storesCard3-card-item3">Fan to fan Star Wars game <br>- collect Christmas presents with  BB-8</div>
    </div>
 </div>
 </div>
@@ -179,6 +162,10 @@ $(document).ready(function()
 </div>
 </div>
 <div id="wb_LayoutGrid5">
+<div id="LayoutGrid5-divider-bottom">
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1440 320">
+<path class="divider-fill"  d="M0,0L0,256L42.4,256L42.4,256L84.7,256L84.7,0L127.1,0L127.1,96L169.4,96L169.4,224L211.8,224L211.8,224L254.1,224L254.1,128L296.5,128L296.5,32L338.8,32L338.8,160L381.2,160L381.2,128L423.5,128L423.5,192L465.9,192L465.9,256L508.2,256L508.2,288L550.6,288L550.6,64L592.9,64L592.9,192L635.3,192L635.3,128L677.6,128L677.6,64L720,64L720,128L762.4,128L762.4,224L804.7,224L804.7,160L847.1,160L847.1,192L889.4,192L889.4,256L931.8,256L931.8,32L974.1,32L974.1,64L1016.5,64L1016.5,288L1058.8,288L1058.8,256L1101.2,256L1101.2,128L1143.5,128L1143.5,160L1185.9,160L1185.9,64L1228.2,64L1228.2,160L1270.6,160L1270.6,288L1312.9,288L1312.9,224L1355.3,224L1355.3,128L1397.6,128L1397.6,192L1440,192L1440,320L1397.6,320L1397.6,320L1355.3,320L1355.3,320L1312.9,320L1312.9,320L1270.6,320L1270.6,320L1228.2,320L1228.2,320L1185.9,320L1185.9,320L1143.5,320L1143.5,320L1101.2,320L1101.2,320L1058.8,320L1058.8,320L1016.5,320L1016.5,320L974.1,320L974.1,320L931.8,320L931.8,320L889.4,320L889.4,320L847.1,320L847.1,320L804.7,320L804.7,320L762.4,320L762.4,320L720,320L720,320L677.6,320L677.6,320L635.3,320L635.3,320L592.9,320L592.9,320L550.6,320L550.6,320L508.2,320L508.2,320L465.9,320L465.9,320L423.5,320L423.5,320L381.2,320L381.2,320L338.8,320L338.8,320L296.5,320L296.5,320L254.1,320L254.1,320L211.8,320L211.8,320L169.4,320L169.4,320L127.1,320L127.1,320L84.7,320L84.7,320L42.4,320L42.4,320L0,320L0,320Z"></path>
+</svg></div>
 <div id="LayoutGrid5">
 <div class="col-1">
 <div id="wb_CardContainer1">
@@ -238,21 +225,16 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="wb_social">
-<div id="social">
-<div class="row">
-<div class="col-1">
-<div id="wb_Text3">
-<span style="color:#FFFFFF;font-family:Arial;font-size:20px;"><a href="mailto:hoglet.interactive@gmail.com">hoglet.interactive@gmail.com</a></span>
-</div>
-</div>
-</div>
-</div>
-</div>
 <div id="wb_LayoutGrid3">
 <div id="LayoutGrid3">
 <div class="col-1">
 <div class="col-1-padding">
+<div id="wb_IconFont2" style="display:inline-block;width:46px;height:46px;text-align:center;z-index:22;">
+<a href="mailto:hoglet.interactive@gmail.com"><svg id="IconFont2" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M1024 370 L1024 823 C1024 848, 1016 870, 998 888 C980 906, 958 915, 933 915 L92 915 C67 915, 45 906, 27 888 C9 870, 1 848, 1 823 L1 370 C17 388, 36 406, 58 419 C196 513, 291 579, 342 616 C364 632, 382 645, 395 654 C409 663, 427 672, 449 681 C472 691, 492 695, 512 695 L512 695 L513 695 C532 695, 553 691, 577 681 C598 672, 616 663, 630 654 C643 645, 662 632, 683 616 C748 570, 842 504, 967 419 C989 404, 1008 388, 1024 370 Z M1024 202 C1024 232, 1015 260, 996 288 C978 315, 955 339, 927 358 C784 458, 694 519, 659 544 C656 546, 647 552, 635 561 C623 570, 612 577, 604 583 C596 588, 586 595, 574 602 C563 608, 552 614, 542 617 C531 620, 522 622, 513 622 L512 622 L512 622 C503 622, 494 620, 483 617 C473 614, 462 608, 450 602 C439 595, 429 588, 421 583 C413 577, 402 570, 390 561 C378 552, 369 546, 366 544 C331 519, 281 485, 216 440 C151 394, 112 367, 99 358 C75 342, 53 321, 32 292 C11 264, 1 238, 1 214 C1 184, 8 160, 24 140 C40 120, 63 110, 92 110 L933 110 C958 110, 979 119, 997 137 C1015 155, 1024 176, 1024 202"/>
+</svg>
+</a>
+</div>
 <div id="wb_IconFont3" style="display:inline-block;width:46px;height:46px;text-align:center;z-index:23;">
 <a href="https://twitter.com/Suni_games" target="_blank"><svg id="IconFont3" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
    <path d="M962 233 C937 270, 906 302, 870 328 C870 334, 870 342, 870 352 C870 402, 863 451, 848 501 C834 550, 812 597, 782 643 C753 688, 718 728, 677 763 C636 798, 587 826, 530 846 C472 867, 411 878, 345 878 C242 878, 147 850, 62 795 C75 796, 90 797, 106 797 C193 797, 268 771, 335 718 C295 717, 260 705, 228 681 C196 657, 175 627, 163 590 C175 592, 187 593, 198 593 C214 593, 230 591, 246 587 C204 578, 168 557, 140 523 C112 489, 98 450, 98 406 L98 403 C124 418, 152 426, 182 427 C156 410, 136 388, 122 361 C106 334, 99 305, 99 273 C99 239, 108 208, 124 180 C171 237, 227 282, 293 316 C359 350, 430 369, 505 373 C502 358, 500 344, 500 331 C500 280, 518 236, 554 200 C590 164, 634 146, 685 146 C738 146, 783 166, 820 204 C861 196, 900 182, 937 160 C923 204, 896 238, 856 262 C891 258, 927 248, 962 233"/>
